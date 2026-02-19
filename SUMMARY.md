@@ -14,6 +14,7 @@
     * [markdown format](dashboard-guide/shared-assets/actionbooks/markdown-format.md)
   * [Tools](dashboard-guide/shared-assets/tools.md)
   * [Message templates](dashboard-guide/shared-assets/message-templates.md)
+  * [actionbook trigger draft](dashboard-guide/shared-assets/actionbook-trigger-draft.md)
   * [Follow-up triggers](dashboard-guide/shared-assets/follow-up-triggers.md)
 * [Build](dashboard-guide/build/README.md)
   * [Profile](dashboard-guide/build/profile.md)
