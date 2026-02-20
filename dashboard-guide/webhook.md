@@ -216,7 +216,7 @@ Even after the handoff, you can get the information about a human agent's messag
 
 <table><thead><tr><th width="249.8828125">Parameter</th><th width="110.97265625">Type</th><th>Description</th></tr></thead><tbody><tr><td>message</td><td>object</td><td>A JSON object that contains message information.</td></tr><tr><td>message.message_id</td><td>int</td><td>Specifies the unique ID of the message.</td></tr><tr><td>message.content</td><td>string</td><td>Specifies the text content of the message.</td></tr><tr><td>sent_at</td><td>string</td><td>Specifies the time when the message was sent, in ISO 8601 format.</td></tr></tbody></table>
 
-#### [Low confidence](evaluate/flagged-messages.md#low-confidence)
+#### [Low confidence](evaluate/reports/flagged-messages.md#low-confidence)
 
 When the AI agent generates a low-confidence message and `flagged_message:hallucination_detected` event occurs, the payload contains a `message` object, along with the common fields listed above.
 

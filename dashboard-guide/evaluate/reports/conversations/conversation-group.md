@@ -13,7 +13,7 @@ This guide...
 Utilize triggers to create a seamless omni-channel customer experience by consolidating scattered conversations into a single, unified customer support stream.
 
 {% hint style="info" %}
-Follow-up triggers are&#x20;
+Follow-up triggers will be supported soon.
 {% endhint %}
 
 ### Conversation view

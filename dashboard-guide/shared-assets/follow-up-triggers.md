@@ -20,7 +20,7 @@ Delight AI agent supports triggers for two types of events: conversation event a
 
 You can create and manage triggers under **Workspace settings > Shared assets > Follow-up triggers**.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Conversation event trigger
 
@@ -55,8 +55,8 @@ To update the settings of the triggers, do either of the following:&#x20;
 * Click **Manage follow-up trigger** in the top-right corner of the screen or&#x20;
 * Navigate directly to **Workspace settings > Shared assets > Follow-up triggers** in Delight AI agent dashboard.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Follow-up triggers inevitably create a Conversation group. To learn more about the conversation group, [see our guide under Evaluate > Conversations > Conversation group](../evaluate/conversations/conversation-group.md).
+Follow-up triggers inevitably create a Conversation group. To learn more about the conversation group, [see our guide under Evaluate > Conversations > Conversation group](../evaluate/reports/conversations/conversation-group.md).
 {% endhint %}
