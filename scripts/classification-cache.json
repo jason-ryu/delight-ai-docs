@@ -65,6 +65,30 @@
       "syncBack": true,
       "reason": "SDK feature guide documenting message types and functionality for React/JavaScript SDK. This is user-facing product documentation that should be published and kept in sync with source repos.",
       "classifiedAt": "2026-02-12T08:51:31.357Z"
+    },
+    "android/docs/README.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "This is an SDK getting started/quickstart guide for Android integration. It's user-facing product documentation that should be published to the docs site and changes should sync back to the source repository.",
+      "classifiedAt": "2026-02-20T03:36:14.007Z"
+    },
+    "android/docs/features/README.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "SDK feature guide index - explains how to use the Android SDK features, which is core product documentation that should be published and kept in sync with source repos",
+      "classifiedAt": "2026-02-20T03:36:18.129Z"
+    },
+    "android/docs/features/messages.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "This is an SDK feature guide documenting message types and functionality for the Android platform. It's user-facing product documentation that should be published to the docs site and synchronized back from editorial changes.",
+      "classifiedAt": "2026-02-20T03:36:19.775Z"
+    },
+    "android/docs/features/readme.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "SDK feature guide README for Android. This is user-facing documentation explaining how to use SDK features, which should be published to docs site and editable via docs sync workflow.",
+      "classifiedAt": "2026-02-20T03:39:26.602Z"
     }
   }
 }
