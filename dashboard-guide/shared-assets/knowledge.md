@@ -14,7 +14,7 @@ Knowledge consists of various content sources your AI agent uses to generate acc
   * Supported file format: `json`, `txt`, `md`, `pdf`, `xlsx`, `xls`, `docx`, `doc`, `pptx`, `ppt`
 * Snippets — Manually add quick facts or guidance.
 * Websites — Import subpages from a main URL.
-* Integrations — Sync from [Salesforce](../integrations/salesforce.md), [Confluence](../integrations/confluence.md), [Sprinklr](../integrations/sprinklr.md), [Zendesk](../integrations/zendesk.md), Notion, [Amazon S3](../integrations/amazon-s3.md),  [Genesys](../integrations/genesys.md) (Voice channel only)
+* Integrations — Sync from [Salesforce](../integrations/salesforce.md), [Confluence](../integrations/confluence.md), [Sprinklr](../integrations/sprinklr.md), [Zendesk](../integrations/zendesk.md), Notion, [Amazon S3](../integrations/amazon-s3.md), [Genesys](../integrations/genesys.md) (Voice channel only)
 
 {% hint style="info" %}
 Integrations must first be configured under **Workspace settings > Integrations**.
@@ -41,7 +41,7 @@ Knowledge is a shared asset created and managed at the **workspace level**, but 
 * Enable or disable knowledge items for each AI agent.
 * Useful when AI agents need different scopes of knowledge.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

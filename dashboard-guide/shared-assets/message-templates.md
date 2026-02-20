@@ -205,9 +205,9 @@ Use the request data (`user_id`, `language`, `context object`, etc.) to tailor w
 
 You can also render your own message UI using a custom message template. Specify a unique ID for the custom template and the Delight server will deliver a raw response to the AI agent SDK in your client app.
 
-Select Custom for the template type and assign a unique ID to identify the template. Make sure you copy and save the ID so that you can request the template in Delight AI agent SDK.&#x20;
+Select Custom for the template type and assign a unique ID to identify the template. Make sure you copy and save the ID so that you can request the template in Delight AI agent SDK.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The ID can be edited. If you change it, make sure to update the same ID in your SDK implementation. Otherwise, the custom template won't work properly.
