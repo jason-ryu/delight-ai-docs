@@ -6,7 +6,7 @@ Whether you’re using traditional CX platforms or incorporating our web and mob
 
 In Messenger, you can view and configure the messenger channel settings in the following tabs:
 
-* [Conversation settings](../../../evaluate/conversations/)
+* [Conversation settings](../../../evaluate/reports/conversations/)
 * [Appearance](appearance.md)
 * [Basic information](basic-information.md)
 

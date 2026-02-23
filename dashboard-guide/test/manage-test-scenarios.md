@@ -25,10 +25,6 @@ You can create a test scenario by uploading a CSV, importing from real conversat
 
 #### Sample test conversation
 
-{% file src="../../.gitbook/assets/sample-conversation (8) (1).csv" %}
-Download sample test conversation here.
-{% endfile %}
-
 ### Creating manually
 
 1. Log into your [Delight AI dashboard](https://dashboard.delight.ai/).
