@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Conversation group
 
 **Conversation Group** enables the AI agent to communicate with users across multiple channels, including SMS, email, in-app messaging, and voice calls. This helps you build a seamless, unified communication experience for your users.
@@ -37,14 +41,14 @@ Various channels used to address a user's inquiry will be grouped into one conve
 
 ### Channel sequence
 
-In the conversation details view, you can track the cross-channel interactions between your AI agent and a user. This section offers a clear overview and detailed metrics on omni-channel communications, known as the Channel sequence.&#x20;
+In the conversation details view, you can track the cross-channel interactions between your AI agent and a user. This section offers a clear overview and detailed metrics on omni-channel communications, known as the Channel sequence.
 
 ### Conversation group insights
 
 The timeline and summary in the **Conversation group** panel provide a quick understanding of conversation history and valuable customer insights. When all conversations are closed, it offers a comprehensive analysis on the entire conversation group, including:
 
 * Category
-* Overall summary&#x20;
+* Overall summary
 * Resolution status
 * AI handle time
 * User sentiment
