@@ -9,6 +9,10 @@ Conversations reports offer you a more segmented insights into conversations by 
 * **Completed conversation**: Comprehensive metrics on conversations that have been closed.
 * **Ongoing conversation**: Comprehensive metrics on conversations that are taking place at the moment.
 
+{% hint style="info" %}
+Now, our **Conversations** report displays the **Conversation group** information. To learn more, see [our guide on **Conversation group**](conversation-group.md).&#x20;
+{% endhint %}
+
 ### How to analyze conversations
 
 Use the following tools and insights to evaluate conversation quality and AI agent performance:
