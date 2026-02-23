@@ -1,0 +1,105 @@
+{
+  "$comment": "Pattern-based mapping table - supports auto sync when new files are added",
+  "$reference": "See MAPPING-REFERENCE.md",
+
+  "repositories": {
+    "android": {
+      "owner": "sendbird",
+      "repo": "ai-agent-android",
+      "defaultBranch": "main"
+    },
+    "ios": {
+      "owner": "sendbird",
+      "repo": "ai-agent-ios",
+      "defaultBranch": "develop"
+    },
+    "js": {
+      "owner": "sendbird",
+      "repo": "ai-agent-js",
+      "defaultBranch": "main"
+    }
+  },
+
+  "patterns": [
+    {
+      "$comment": "Android features → docs/",
+      "docsPrefix": "sdk-docs/android/features/",
+      "repo": "android",
+      "privateBase": "docs/docs/features/",
+      "publicBase": "android/docs/features/"
+    },
+    {
+      "$comment": "Android root level",
+      "docsPrefix": "sdk-docs/android/",
+      "repo": "android",
+      "privateBase": "docs/docs/",
+      "publicBase": "android/docs/"
+    },
+    {
+      "$comment": "iOS features → docs/features/",
+      "docsPrefix": "sdk-docs/ios/features/",
+      "repo": "ios",
+      "privateBase": "docs/features/",
+      "publicBase": "ios/docs/features/"
+    },
+    {
+      "$comment": "iOS root level",
+      "docsPrefix": "sdk-docs/ios/",
+      "repo": "ios",
+      "privateBase": "docs/",
+      "publicBase": "ios/docs/"
+    },
+    {
+      "$comment": "JavaScript CDN features",
+      "docsPrefix": "sdk-docs/javascript-cdn/features/",
+      "repo": "js",
+      "privateBase": "packages/cdn-loader/docs/features/",
+      "publicBase": "js/cdn/docs/features/"
+    },
+    {
+      "$comment": "JavaScript CDN root",
+      "docsPrefix": "sdk-docs/javascript-cdn/",
+      "repo": "js",
+      "privateBase": "packages/cdn-loader/docs/",
+      "publicBase": "js/cdn/docs/"
+    },
+    {
+      "$comment": "React NPM features",
+      "docsPrefix": "sdk-docs/react-npm/features/",
+      "repo": "js",
+      "privateBase": "packages/messenger-react/docs/features/",
+      "publicBase": "js/react/docs/features/"
+    },
+    {
+      "$comment": "React NPM root",
+      "docsPrefix": "sdk-docs/react-npm/",
+      "repo": "js",
+      "privateBase": "packages/messenger-react/docs/",
+      "publicBase": "js/react/docs/"
+    },
+    {
+      "$comment": "React Native features",
+      "docsPrefix": "sdk-docs/react-native/features/",
+      "repo": "js",
+      "privateBase": "packages/messenger-react-native/docs/features/",
+      "publicBase": "js/react-native/docs/features/"
+    },
+    {
+      "$comment": "React Native root",
+      "docsPrefix": "sdk-docs/react-native/",
+      "repo": "js",
+      "privateBase": "packages/messenger-react-native/docs/",
+      "publicBase": "js/react-native/docs/"
+    }
+  ],
+
+  "excludePatterns": {
+    "$comment": "Paths matching these patterns are skipped in both forward and backward sync",
+    "directories": ["discussions/"],
+    "keywords": ["sample", "example"]
+  },
+
+  "overrides": {
+    "$comment": "Add entries here only for files with different names or special paths"
+  }
+}
