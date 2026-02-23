@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Personalize with AI
 
 **Personalize with AI** lets your AI agent dynamically generate a welcome message and suggested replies tailored to each user. Instead of showing a fixed message, the AI agent references the user's past conversations, external data from API tool calls, and conversation-specific context to compose a relevant first message.
