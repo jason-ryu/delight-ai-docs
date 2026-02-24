@@ -37,7 +37,7 @@ The Follow-up trigger feature will be supported soon.
 
 Various channels used to address a user's inquiry will be grouped into one conversation group called **Conversation group** as shown in the screenshot below.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Channel sequence
 

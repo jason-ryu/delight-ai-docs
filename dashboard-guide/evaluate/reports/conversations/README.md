@@ -2,7 +2,7 @@
 
 This feature provides a detailed view of AI agent-customer interactions, helping businesses to assess the agent’s performance, identify resolution patterns, and optimize its behavior. By analyzing individual conversations, you can refine their AI agent’s responses, improve automation efficiency, and enhance customer satisfaction.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Conversations reports offer you a more segmented insights into conversations by their status: **Completed** and **Ongoging**.
 
@@ -10,7 +10,7 @@ Conversations reports offer you a more segmented insights into conversations by 
 * **Ongoing conversation**: Comprehensive metrics on conversations that are taking place at the moment.
 
 {% hint style="info" %}
-Now, our **Conversations** report displays the **Conversation group** information. To learn more, see [our guide on **Conversation group**](conversation-group.md).&#x20;
+Now, our **Conversations** report displays the **Conversation group** information. To learn more, see [our guide on **Conversation group**](conversation-group.md).
 {% endhint %}
 
 ### How to analyze conversations

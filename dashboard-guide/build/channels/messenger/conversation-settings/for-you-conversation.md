@@ -34,4 +34,4 @@ This feature also requires deployment for live action. Make sure deploy the chan
 • The default welcome message is used if the AI agent fails to generate a personalized message within five seconds.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
