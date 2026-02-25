@@ -28,6 +28,10 @@ This feature also requires deployment for live action. Make sure deploy the chan
 6. As a fallback, add a default welcome message under **Language** that can be used when the AI agent can't generate a personalized message.
 
 {% hint style="warning" %}
+If AI agent can't generate a personalized message in X seconds, the example messages provided will be sent to users.&#x20;
+{% endhint %}
+
+{% hint style="warning" %}
 #### Message behavior - When **Personalize with AI** is enabled
 
 • Language-specific welcome messages are ignored. \
