@@ -24,7 +24,7 @@ When a conversation ends in one of the above, a follow-up conversation starts in
 * SMS
 
 {% hint style="info" %}
-The Follow-up trigger feature will be supported soon.
+To learn more, see [our guide on Follow-up triggers](../../../shared-assets/follow-up-triggers.md).
 {% endhint %}
 
 ***

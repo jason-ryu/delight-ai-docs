@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Follow-up triggers
 
 Utilize follow-up triggers to enhance communication for users by providing seamless omnichannel support. These triggers activate specific actions, such as shifting conversations to different channels or making an API call, offering improved assistance with user inquiries.
@@ -16,7 +12,7 @@ Delight AI agent supports triggers for two types of events: conversation event a
 
 ***
 
-## How to create&#x20;
+## How to create
 
 You can create and manage triggers under **Workspace settings > Shared assets > Follow-up triggers**.
 
@@ -28,14 +24,12 @@ You can create and manage triggers under **Workspace settings > Shared assets > 
 2. Click **Add+** in the top-right corner of the screen.
 3.  Configure the name and flow of the trigger.
 
-
-
     <figure><img src="../../.gitbook/assets/convo trigger.png" alt=""><figcaption></figcaption></figure>
 
     1. Flow - Condition: you can set a condition when the trigger should be initiated
        1. Channel
        2. Resolution status
-    2. Flow - Acton: you can determine which channel to use when starting a follow-up conversation with the user. When creating a new conversation, AI will send an opening message to the user.&#x20;
+    2. Flow - Acton: you can determine which channel to use when starting a follow-up conversation with the user. When creating a new conversation, AI will send an opening message to the user.
        1. Channel
        2. Resolution status
        3. Message: Provide an instruction and a message sample for your AI agent to reference. You can determine whether to let the agent refer to user memories when generating the message.
@@ -46,14 +40,14 @@ user memory - link to FYC message
 
 ***
 
-## How to manage&#x20;
+## How to manage
 
-You can determine which follow-up triggers to use under **Build > Follow-up triggers**. Toggle on and off each trigger to enable triggers.&#x20;
+You can determine which follow-up triggers to use under **Build > Follow-up triggers**. Toggle on and off each trigger to enable triggers.
 
-To update the settings of the triggers, do either of the following:&#x20;
+To update the settings of the triggers, do either of the following:
 
-* Click **Manage follow-up trigger** in the top-right corner of the screen or&#x20;
-* Navigate directly to **Workspace settings > Shared assets > Follow-up triggers** in Delight AI agent dashboard.&#x20;
+* Click **Manage follow-up trigger** in the top-right corner of the screen or
+* Navigate directly to **Workspace settings > Shared assets > Follow-up triggers** in Delight AI agent dashboard.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
