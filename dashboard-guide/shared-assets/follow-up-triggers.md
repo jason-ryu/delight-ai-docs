@@ -10,6 +10,19 @@ Delight AI agent supports triggers for two types of events: conversation event a
 
 <table><thead><tr><th width="163.03125">Event</th><th>Trigger condition</th><th>Action</th></tr></thead><tbody><tr><td>Conversation</td><td>When a conversation ends</td><td>it create a new conversation.</td></tr></tbody></table>
 
+### Supported channels
+
+When a **Follow-up trigger** is enabled, AI agent creates a seamless omni-channel customer experience by consolidating scattered conversations into a single, unified customer support stream.
+
+Follow-up conversations can be supported for the following channels:
+
+* Messenger
+* Voice
+
+When a conversation ends in one of the above, a follow-up conversation starts in:
+
+* SMS
+
 ***
 
 ## How to create
@@ -35,22 +48,5 @@ You can create and manage triggers under **Workspace settings > Shared assets > 
        3. Message: Provide an instruction and a message sample for your AI agent to reference. You can determine whether to let the agent refer to user memories when generating the message.
 
 {% hint style="info" %}
-user memory - link to FYC message
-{% endhint %}
-
-***
-
-## How to manage
-
-You can determine which follow-up triggers to use under **Build > Follow-up triggers**. Toggle on and off each trigger to enable triggers.
-
-To update the settings of the triggers, do either of the following:
-
-* Click **Manage follow-up trigger** in the top-right corner of the screen or
-* Navigate directly to **Workspace settings > Shared assets > Follow-up triggers** in Delight AI agent dashboard.
-
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Follow-up triggers inevitably create a Conversation group. To learn more about the conversation group, [see our guide under Evaluate > Conversations > Conversation group](../evaluate/reports/conversations/conversation-group.md).
+Follow-up triggers create a Conversation group. To learn more, [see our guide under Evaluate > Conversations > Conversation group](../evaluate/reports/conversations/conversation-group.md).
 {% endhint %}
