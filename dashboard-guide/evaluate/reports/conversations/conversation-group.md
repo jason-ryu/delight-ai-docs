@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Conversation group
 
 **Conversation Group** enables the AI agent to communicate with users across multiple channels, including SMS, email, in-app messaging, and voice calls. This helps you build a seamless, unified communication experience for your users.
