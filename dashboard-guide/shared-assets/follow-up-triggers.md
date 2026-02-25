@@ -40,10 +40,10 @@ You can create and manage triggers under **Workspace settings > Shared assets > 
     <figure><img src="../../.gitbook/assets/convo trigger.png" alt=""><figcaption></figcaption></figure>
 
     1. Flow - Condition: you can set a condition when the trigger should be initiated
-       1. Channel
+       1. Channel: Messenger or Voice
        2. Resolution status
     2. Flow - Acton: you can determine which channel to use when starting a follow-up conversation with the user. When creating a new conversation, AI will send an opening message to the user.
-       1. Channel
+       1. Channel: SMS
        2. Resolution status
        3. Message: Provide an instruction and a message sample for your AI agent to reference. You can determine whether to let the agent refer to user memories when generating the message.
 
