@@ -4,10 +4,10 @@ In Delight AI agent, users can exchange text, image, and file messages with AI a
 
 This guide covers:
 - [Types](#types)
-    - [Text Message](#text-message)
-    - [Image Message](#image-message)
-    - [File Message](#file-message)
-    - [Rich Message](#rich-message)
+    - [Text message](#text-message)
+    - [Image message](#image-message)
+    - [File message](#file-message)
+    - [Rich message](#rich-message)
 - [Key features](#key-features)
     - [Read receipt](#read-receipt)
     - [Citation](#citation)
@@ -22,10 +22,10 @@ Delight AI agent supports the following message types for communication between 
 
 | Type                                       | Description                                 | Content format                      | Use cases                                                                  |
 | ------------------------------------------ | ------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
-| [Text message](messages.md#text-message)   | Regular text-based communication            | Plain text                          | Basic conversational interactions, Q\&A, general dialogue                  |
-| [Image message](messages.md#image-message) | Visual file sharing                         | Image files in `PNG` and `JPG` only | Visual communication, screenshots, diagrams                                |
-| [File message](messages.md#file-message)   | Document and file sharing                   | Various file formats                | Document sharing, attachments, downloadable resources                      |
-| [Rich message](messages.md#rich-message)   | Template-based messages with interactive UI | Structured JSON templates           | Product displays, carousels, CTAs and more. See below section for details. |
+| [Text message](#text-message)   | Regular text-based communication            | Plain text                          | Basic conversational interactions, Q\&A, general dialogue                  |
+| [Image message](#image-message) | Visual file sharing                         | Image files in `JPEG` and `PNG` only | Visual communication, screenshots, diagrams                                |
+| [File message](#file-message)   | Document and file sharing                   | Various file formats                | Document sharing, attachments, downloadable resources                      |
+| [Rich message](#rich-message)   | Template-based messages with interactive UI | Structured JSON templates           | Product displays, carousels, CTAs and more. See below section for details. |
 
 ### Text message
 
@@ -52,11 +52,11 @@ Image messages allow users to share visual content within conversations.
 
 ### File message
 
-File messages allow users to share documents within conversations.
+File message allows sharing of various file formats within conversations, enabling the sharing of documents and resources between users and AI agents.
 
-* Supported formats: `PDF` only. Can be sent with text.
-* Use case: Document sharing and file attachments.
-* Display: File preview with download capabilities.
+- Supported formats: `PDF` only. Can be sent with text.
+- Use case: Document sharing and file-based communication.
+- Display: File preview with download capabilities.
 
 <figure>
   <img src="https://sendbird-files.s3.ap-northeast-1.amazonaws.com/docs/da-mobile-file-message2.png" alt="" width="375">
@@ -84,9 +84,9 @@ CTA messages contain a button that allows users to take specific actions directl
 
 Carousel messages present multiple items in a horizontally scrollable format. Users can browse through various options or content pieces.
 
-* Layout: Horizontal scrolling interface.
-* Content: Multiple items with individual interactions.
-* Use case: Product showcases, option selection, content browsing.
+- Layout: Horizontal scrolling interface.
+- Content: Multiple items with individual interactions.
+- Use case: Product showcases, option selection, content browsing.
 
 <figure>
   <img src="https://sendbird-files.s3.ap-northeast-1.amazonaws.com/docs/da-mobile-carousel2.png" alt="" width="375">
@@ -122,9 +122,9 @@ CSAT messages collect user feedback for customer satisfaction surveys within con
 
 Product list messages display product information in a vertical scrolling format. Unlike Carousel, the vertical layout is optimized for product browsing and selection.
 
-* Layout: Vertical scrolling interface.
-* Content: Product information and details.
-* Use case: E-commerce integration, product showcases, inventory display.
+- Layout: Vertical scrolling interface.
+- Content: Product information and details.
+- Use case: E-commerce integration, product showcases, inventory display.
 
 <figure>
   <img src="https://sendbird-files.s3.ap-northeast-1.amazonaws.com/docs/aa-sdk-mobile-message-product-list.png" alt="cascade" width="375">
@@ -386,9 +386,9 @@ override fun onCreateCustomMessageTemplateView(
 
 Delight AI agent supports the following message features:
 
-* [Read receipt](messages.md#read-receipt)
-* [Citation](messages.md#citation)
-* [Special notice](messages.md#special-notice)
+- [Read receipt](#read-receipt)
+- [Citation](#citation)
+- [Special notice](#special-notice)
 
 ### Read receipt
 
@@ -398,6 +398,11 @@ You can display read status on messages to indicate when they have been viewed. 
 // Enable message receipt state
 AIAgentMessenger.config.conversation.list.enableMessageReceiptState = true
 ```
+
+When enabled, messages display visual indicators for:
+
+- Sent status
+- Read status with timestamp
 
 ### Citation
 
