@@ -10,11 +10,17 @@ AI agent keeps track of conversations with a user and turns key points into **Me
 
 ## How it works
 
-description
+ㅁ
 
 
 
-ㅡ
+Memory access / Roles and permissions
+
+
+
+## Memory type
+
+<table><thead><tr><th width="264.28515625">Type</th><th>Examples</th></tr></thead><tbody><tr><td>Background</td><td>City of residence, Family member</td></tr><tr><td>Preferences</td><td>Allergies, apparel sizes</td></tr><tr><td>Experiences</td><td>Promotion, Birthday, Accident history</td></tr><tr><td>Needs and intents</td><td>Lease, contract, event due date</td></tr><tr><td>Business-specific information</td><td>Recent purchase, upcoming appointment</td></tr></tbody></table>
 
 ## User information
 
