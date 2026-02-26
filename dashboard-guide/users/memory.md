@@ -42,5 +42,5 @@ AI agents can utilize these memories when sending hyper-personalized messages. T
 
 Personlized messages are currently available whenever a welcome message is delivered to users. Supported features include:
 
-* Follow-up triggers
+* [Follow-up triggers](../shared-assets/follow-up-triggers.md)
 * Messenger channel's [Conversation settings](../build/channels/messenger/conversation-settings/)
