@@ -10,7 +10,7 @@ AI agent keeps track of conversations with a user and turns key points into **Me
 
 ## How it works
 
-ㅁ
+AI agent can create and store memories from the past conversations with a specific user. The number of reference conversation can be set by Delight team. By default, AI agents can access  five recent conversations.
 
 
 
