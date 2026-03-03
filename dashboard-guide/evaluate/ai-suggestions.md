@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # AI suggestions
 
 **AI suggestions** help you improve your AI agent’s performance by identifying common user pain points. The system analyzes recent conversations and automatically surfaces insights where the agent may lack knowledge or underperform, allowing you to proactively enhance your AI setup.

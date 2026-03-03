@@ -5,10 +5,10 @@ Customer satisfaction (CSAT) survey helps you improve the overall user experienc
 Go to **Build > CSAT** in Delight AI dashboard to get started with a customizable CSAT survey.
 
 {% hint style="warning" %}
-Such customization can be applied to [Messenger](channels/messenger/) and [Email](channels/email.md) channels only. If you wish to update the survey question for other channels such as [SMS](channels/sms.md) and [WhatsApp](channels/whatsapp.md), go to **Build >** **Channels** and configure the settings for each channel type. CSAT survey isn't supported in Voice channels.
+Such customization can be applied to [Messenger](../channels/messenger/) and [Email](../channels/all-channels/email.md) channels only. If you wish to update the survey question for other channels such as [SMS](../channels/all-channels/sms.md) and [WhatsApp](../channels/all-channels/whatsapp.md), go to **Build >** **Channels** and configure the settings for each channel type. CSAT survey isn't supported in Voice channels.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/csat_updated_0126.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/csat_updated_0126.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -29,7 +29,7 @@ This guide walks you through the customization process for a CSAT survey.
 3. After choosing an AI agent to set a CSAT survey for, navigate to **Build > CSAT** in the left menu bar.
 4. Then, activate the feature.
 
-<figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Once this feature is enabled:
@@ -59,7 +59,7 @@ The CRE is a survey asking users whether their inquiries have been resolved by A
 * Positive feedback text
 * Negative feedback text
 
-<figure><img src="../../.gitbook/assets/resolution.png" alt="" width="501"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/resolution.png" alt="" width="501"><figcaption></figcaption></figure>
 
 #### CSAT survey
 
@@ -83,7 +83,7 @@ A follow-up question is a conditional query that can be asked when the user sele
    1. If required, check the **Required** box in the top-right corner of the section.
    2. You can also determine whether to display the follow-up question regardless of the user's answer.
 
-<figure><img src="../../.gitbook/assets/follow-up_detail.png" alt="" width="447"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/follow-up_detail.png" alt="" width="447"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The default CSAT survey includes one open-ended follow-up question for all rating options.\
@@ -92,7 +92,7 @@ Each rating can have only one follow-up question. To customize follow-ups per ra
 
 </details>
 
-<figure><img src="../../.gitbook/assets/follow-up_detail (1).png" alt="" width="501"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/follow-up_detail (1).png" alt="" width="501"><figcaption></figcaption></figure>
 
 ### Others
 
@@ -101,7 +101,7 @@ Besides the survey's language and content, you can also customize:
 * Submit button label: the text for the **Submit** button.
 * Confirmation message after submission: the text that will appear after the user clicks **Submit**.
 
-<figure><img src="../../.gitbook/assets/submit.png" alt="" width="525"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/submit.png" alt="" width="525"><figcaption></figcaption></figure>
 
 ***
 
@@ -113,12 +113,12 @@ On the right side of the survey section, there is **Tester** that shows a previe
 Make sure that the language set to the tester widget matches with the language used for the survey. Otherwise, the tester won't work properly.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
 ## Permission
 
-In Delight AI dashboard, only the users with a permission can access and manage the CSAT survey settings. If you need to grant the access to certain roles, go to **Organization settings > Roles** and create a new permission set or update an existing set. [See our guide on Roles and permissions](../roles-and-permissions.md) to learn more.
+In Delight AI dashboard, only the users with a permission can access and manage the CSAT survey settings. If you need to grant the access to certain roles, go to **Organization settings > Roles** and create a new permission set or update an existing set. [See our guide on Roles and permissions](../../roles-and-permissions.md) to learn more.
 
-<figure><img src="../../.gitbook/assets/image (92).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (92).png" alt="" width="563"><figcaption></figcaption></figure>

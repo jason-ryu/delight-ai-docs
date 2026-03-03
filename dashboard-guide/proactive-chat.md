@@ -1,6 +1,6 @@
 # Proactive chat
 
-With Proactive chat, AI agents can send a message to users and initiate a conversation. You can utilize this feature to send marketing or announcement messages to a target user. When a customer replies to the message, the proactive chat automatically changes to a general conversation and starts counting its resolution time.
+With **Proactive** chat, AI agents can send a message to users and initiate a conversation. You can utilize this feature to send marketing or announcement messages to a target user. When a customer replies to the message, the proactive chat automatically changes to a general conversation and starts counting its resolution time.
 
 {% hint style="info" %}
 Currently, this feature is supported for SMS and messenger channels in web apps only.
