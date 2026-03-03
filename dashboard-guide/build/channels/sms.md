@@ -28,7 +28,7 @@ Once the phone number was added, follow the instructions below to connect a phon
 2. Click the **SMS** tile.
 3. Select an existing phone number you've registered in advance.
 
-<figure><img src="../../../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Configure the channel settings
 
@@ -44,4 +44,4 @@ You can configure how long your AI agent will wait for a user’s response until
 
 Once the channel is enabled, the `on` label will appear on the channel's tile along with the registered phone number. Click the tile to edit its settings or even delete the channel.
 
-<figure><img src="../../../../.gitbook/assets/image (71).png" alt="" width="326"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (71).png" alt="" width="326"><figcaption></figcaption></figure>

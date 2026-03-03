@@ -7,7 +7,7 @@ In the **WhatsApp** channel settings you can:
 * Connect a WhatsApp Business Account with Delight AI agent.
 * Configure the settings of WhatsApp conversations for your AI agent.
 
-<figure><img src="../../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -34,27 +34,27 @@ Connect your WhatsApp Business account with Delight directly from Delight AI das
 1. Go to **Channels** and click the **WhatsApp** tile in Delight AI dashboard.
 2. Click **Continue** with Meta shown on the pop-up modal.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.46.35 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.46.35 PM.png" alt=""><figcaption></figcaption></figure>
 
 3. Log-in to your Meta account and click on **Agree and Continue** to proceed.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.46.45 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.46.45 PM.png" alt=""><figcaption></figcaption></figure>
 
 4. Meta will show which permissions are shared to Delight AI agent. Click **Get started**.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.46.53 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.46.53 PM.png" alt=""><figcaption></figcaption></figure>
 
 5. Create or connect a Meta Business Portfolio. For more information, see [WhatsApp Business API](https://developers.facebook.com/docs/whatsapp/getting-started).
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.05 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.05 PM.png" alt=""><figcaption></figcaption></figure>
 
 6. Create or select a WhatsApp Business account.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.14 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.14 PM.png" alt=""><figcaption></figcaption></figure>
 
 7. Specify the **WhatsApp Business Account Name**, its **Display name**, and its **Category** of business. Then click on **Next**. Then, Meta will validate the data you have input.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.24 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 8. Next, add a phone number to your **WhatsApp Business Profile**.
    1. To connect a phone number with your WhatsApp Business Profile, you must have access to a phone number to send WhatsApp messages with.
@@ -63,7 +63,7 @@ Connect your WhatsApp Business account with Delight directly from Delight AI das
    3. Input the **OTP** on Meta’s authentication page.
    4. After connecting your WhatsApp Business Profile with Delight AI agent, you can connect and configure a WhatsApp channel for your AI agent.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.32 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.32 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2: Configure the channel settings**
 
@@ -73,7 +73,7 @@ You can set up the channel and manage its settings in Channel > WhatsApp in Deli
 
 For a WhatsApp channel, you can edit the auto-close message and its delivery time. This message will be sent to users when they have been unresponsive for the set period and the AI agent will auto-close this conversation on their behaves.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.44 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.47.44 PM.png" alt=""><figcaption></figcaption></figure>
 
 #### **Channel connection status**
 

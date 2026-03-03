@@ -21,11 +21,11 @@ When you enable the Email channel, it will automatically create a Delight email 
 2. Click the **Email** tile.
 3. Confirm that you will add an email channel for the AI Agent.
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 4. Once the email channel is enabled, you will see an email address auto-generated for your AI agent in the **Channel settings** tab.
 
-<figure><img src="../../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2: Register your email domain**
 
@@ -36,7 +36,7 @@ First, set up the email domain and register AI agent’s DNS records to your dom
 1. Go to **Workspace settings > Channels > Emails** in Delight AI dashboard.
 2. Click **Add +** to add a domain that your business mainly uses.
 
-<figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter your company **Domain URL** and **MAIL-FROM domain URL**.
 
@@ -47,7 +47,7 @@ First, set up the email domain and register AI agent’s DNS records to your dom
 Your MAIL-FROM domain won't be displayed to your users when they receive emails from the AI Agent.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 4. Once the domains are set, you will see **DomainKeys Identified Mail** (DKIM), **Amazon SES** (SPF), and **Domain-based Message Authentication, Reporting, and Comformance** (DMARC) records assigned to your AI agent. Copy and paste these records to your DNS settings to ensure the emails sent from your AI Agent aren’t filtered as spam.
 
@@ -99,14 +99,14 @@ v=spf1 include:_spf.aiagent.sendbird.com ~all
 
 Once you’ve set up SPF, DKIM, and DMARC, check if all records have been successfully detected and verified through your DNS by clicking the Check verification status button under **Workspace settings > Channels > Emails** in **Delight AI dashboard**.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p><strong>Check verification status</strong> button</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p><strong>Check verification status</strong> button</p></figcaption></figure>
 
 </details>
 
 5. After updating the DNS settings, click the **Check verification status** button to check if DKIM and SPF are properly authenticated.
 6. If authenticated, you can add any email addresses to **Custom sender email addresses**. These custom addresses will mask the sender email address of your AI agent's outgoing emails, displaying the specified **Custom sender email address** in your user's inbox instead of its Delight email address.
 
-<figure><img src="../../../../.gitbook/assets/screencapture-dashboard-sendbird-ai-agent-580D1EDC-7B50-40E5-AF33-D99CD7C34D01-settings-emails-2025-04-23-17_47_56.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/screencapture-dashboard-sendbird-ai-agent-580D1EDC-7B50-40E5-AF33-D99CD7C34D01-settings-emails-2025-04-23-17_47_56.png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 3: Set up custom email forwarding rules**
 
@@ -124,25 +124,25 @@ Here, we walk you through the forward setting process for the most popular email
 
 * Open[ Google Admin Console](https://admin.google.com/) in your web browser. Make sure to log in with an administrator account that has permissions to modify email routing settings.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.36.41 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.36.41 PM.png" alt=""><figcaption></figcaption></figure>
 
 2. Enable **Automatic Forwarding**.
 
 * In Admin Console, navigate to **Apps > Google Workspace > Gmail > Routing**.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.11 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.11 PM.png" alt=""><figcaption></figcaption></figure>
 
 3. Create a **New Routing Rule**.
    1. Scroll down to the **Email Forwarding Using Recipient Address Map** section.
    2. In the **Routing** section, click **Add Another Rule** to create a forwarding rule.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.24 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 c. Assign a descriptive name, such as **Forward Support Emails to AI Agent**, to easily identify the rule later.
 
 d. Click **Save** to add the configured rule.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.35 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.35 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For additional information, refer to [Google's guide](https://support.google.com/mail/answer/10957?hl=en).
@@ -162,19 +162,19 @@ For additional information, refer to [Google's guide](https://support.google.com
    1. From the left panel, click **Mail**.
    2. Select **Forwarding and IMAP** from the options.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.58 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.37.58 PM.png" alt=""><figcaption></figcaption></figure>
 
 3. Enable **Email Forwarding**.
    1. Check **Enable forwarding**.
    2. Enter the email address automatically generated for your AI Agent in the **Forward my email to** field.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.34.44 PM.png" alt="" width="317"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.34.44 PM.png" alt="" width="317"><figcaption></figcaption></figure>
 
 4. Choose your preferences and save the settings.
    1. (Optional) If you want to retain a copy of forwarded emails in Outlook, select **Keep a copy of forwarded messages**.
    2. Click **Save** at the bottom to apply your forwarding rules.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-03 at 2.34.51 PM.png" alt="" width="325"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-04-03 at 2.34.51 PM.png" alt="" width="325"><figcaption></figcaption></figure>
 
 </details>
 
@@ -186,7 +186,7 @@ Before setting up email forwarding rules, ensure your domain allows automatic fo
 
 Once you’ve set your custom sender email address, go to the Conversation settings tab and configure the system messages such as a resolution message and goodbye message.
 
-<figure><img src="../../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
 #### **Check for resolution**
 
