@@ -5,7 +5,7 @@ The **Conversation settings** tab lets you define when and how conversations sta
 You can find this page in:\
 **AI agent (Development) > Build > Channel > Messenger > Conversation settings**.
 
-You can edit in the **Development** environment and deploy them to apply changes to **Production**.
+You can edit in the **Development** environment and deploy them to apply changes to **Staging** and **Production**.
 
 ***
 
