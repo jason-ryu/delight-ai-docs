@@ -8,7 +8,7 @@ In the Delight AI Agent dashboard, you can configure agent behavior, manage shar
 
 This section introduces the key concepts referenced throughout the user guide.
 
-#### Workspace vs. AI agent
+### Workspace vs. AI agent
 
 A **workspace** is the shared environment where your AI agents operate. A single workspace can contain multiple agents and shared assets, such as knowledge data.
 
@@ -23,7 +23,7 @@ If not sure where to start, use this rule of thumb:
 To create a new workspace, contact contact one of our Delight representatives.
 {% endhint %}
 
-#### Development, Staging, and Production environments
+### Development, Staging, and Production environments
 
 Once you've created a workspace, you need to build a new AI agent. Delight AI agent automatically comes with three environments:
 
