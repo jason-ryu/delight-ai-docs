@@ -2,10 +2,10 @@
 
 Customer satisfaction (CSAT) survey helps you improve the overall user experience with Delight AI agent by monitoring and managing the agent's performance and interaction with users. At the end of every conversation, you can send out a resolution feedback (CRE) and CSAT survey to users and collect in-depth feedback using follow-up questions. The CSAT page under Build enables you to customize the survey to your service needs.
 
-Go to **Build > CSAT** in Delight AI dashboard to get started with a customizable CSAT survey.
+Go to **Build > Lifecycle > CSAT** in Delight AI dashboard to get started with a customizable CSAT survey.
 
 {% hint style="warning" %}
-Such customization can be applied to [Messenger](channels/messenger/) and [Email](channels/email.md) channels only. If you wish to update the survey question for other channels such as [SMS](channels/sms.md) and [WhatsApp](channels/whatsapp.md), go to **Build >** **Channels** and configure the settings for each channel type. CSAT survey isn't supported in Voice channels.
+Such customization can be applied to [Messenger](channels/messenger/) and [Email](channels/email.md) channels only. If you wish to update the survey question for other channels such as [SMS](channels/sms.md) and [WhatsApp](channels/whatsapp.md), go to **Build > Channels** and configure the settings for each channel type. CSAT survey isn't supported in Voice channels.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/csat_updated_0126.png" alt=""><figcaption></figcaption></figure>
@@ -26,7 +26,7 @@ This guide walks you through the customization process for a CSAT survey.
 
 1. Log in to [Delight AI dashboard](https://dashboard.delight.ai).
 2. Select a **Development** agent from the AI agent list.
-3. After choosing an AI agent to set a CSAT survey for, navigate to **Build > CSAT** in the left menu bar.
+3. After choosing an AI agent to set a CSAT survey for, navigate to **Build > Lifecycle > CSAT** in the left menu bar.
 4. Then, activate the feature.
 
 <figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
