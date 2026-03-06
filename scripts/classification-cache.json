@@ -65,6 +65,18 @@
       "syncBack": true,
       "reason": "SDK feature guide documenting message types and functionality for React/JavaScript SDK. This is user-facing product documentation that should be published and kept in sync with source repos.",
       "classifiedAt": "2026-02-12T08:51:31.357Z"
+    },
+    "js/cdn/docs/MULTILANGUAGE.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "SDK feature guide for multi-language support in Delight AI agent SDK for JavaScript. This is user-facing documentation about SDK functionality that should be published to docs site and kept in sync with source repo.",
+      "classifiedAt": "2026-03-06T06:24:51.651Z"
+    },
+    "js/cdn/docs/features/conversations.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "SDK feature guide documenting conversations functionality - user-facing product documentation that should be published and kept in sync with source",
+      "classifiedAt": "2026-03-06T06:25:32.022Z"
     }
   }
 }
