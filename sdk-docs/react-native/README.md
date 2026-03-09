@@ -5,20 +5,20 @@ The **Delight AI agent Messenger** for React Native allows seamless integration 
 This guide covers:
 - [Prerequisites](#prerequisites)
 - [Getting started](#getting-started)
-    - [Step 1. Install AI Agent SDK](#step-1-install-ai-agent-sdk)
-    - [Step 2. Configure native modules](#step-2-configure-native-modules)
-    - [Step 3. Initialize AI Agent SDK](#step-3-initialize-ai-agent-sdk)
+  - [Step 1. Install AI Agent SDK](#step-1-install-ai-agent-sdk)
+  - [Step 2. Configure native modules](#step-2-configure-native-modules)
+  - [Step 3. Initialize AI Agent SDK](#step-3-initialize-ai-agent-sdk)
 - [Component overview](#component-overview)
 - [Running your application](#running-your-application)
-    - [FixedMessenger styles](#fixedmessenger-styles)
-    - [Window modes](#window-modes)
-    - [Entry points](#entry-points)
-    - [Manage user sessions](#manage-user-sessions)
+  - [FixedMessenger styles](#fixedmessenger-styles)
+  - [Window modes](#window-modes)
+  - [Entry points](#entry-points)
+  - [Manage user sessions](#manage-user-sessions)
 - [Advanced features](#advanced-features)
-    - [Customizing theme](#customizing-theme)
-    - [Display messenger without launcher button](#display-messenger-without-launcher-button)
-    - [Passing context object to agent](#passing-context-object-to-agent)
-    - [Localization and language support](#localization-and-language-support)
+  - [Customizing theme](#customizing-theme)
+  - [Display messenger without launcher button](#display-messenger-without-launcher-button)
+  - [Passing context object to agent](#passing-context-object-to-agent)
+  - [Localization and language support](#localization-and-language-support)
 
 ---
 
@@ -34,7 +34,7 @@ You can find them under the **Channels** > **Messenger** menu on the Delight AI 
 
 - React >= 18.0.0
 - React Native >= 0.80.0
-- @sendbird/chat ^4.19.0
+- @sendbird/chat ^4.21.2
 - react-native-mmkv >= 3.0.0
 - react-native-safe-area-context >= 5.0.0
 - date-fns >= 4.0.0
