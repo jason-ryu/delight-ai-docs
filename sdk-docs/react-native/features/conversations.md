@@ -53,7 +53,7 @@ pnpm add react-native-mmkv expo-image-picker expo-document-picker
 ```
 
 {% hint style="info" %}
-If you're using bare React Native instead of Expo, use `react-native-image-picker` and `react-native-document-picker` instead of the Expo packages. Make sure to follow the installation instructions for each package.
+If you're using bare React Native instead of Expo, use `react-native-image-picker` and `@react-native-documents/picker` instead of the Expo packages. Make sure to follow the installation instructions for each package.
 {% endhint %}
 
 ### Configure native modules
