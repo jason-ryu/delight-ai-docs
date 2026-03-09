@@ -2,7 +2,7 @@
 
 This guide provides security considerations and best practices for Delight AI. Security is a shared responsibility between Delight AI and our customers. Delight AI delivers core security features and safeguards, while customers configure and operate them to meet their security, privacy, and compliance requirements.
 
-<figure><img src="../.gitbook/assets/overview@3x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/overview_v2@3x.png" alt=""><figcaption></figcaption></figure>
 
 Delight AI’s security model is built on layered scopes, from organization and account access controls to workspace and agent configurations, and finally to runtime safeguards that protect live conversations. This guide is organized into five sections, each corresponding to one of these layers. Use the sections below to understand which controls apply at each layer and where to implement them.
 
@@ -18,7 +18,7 @@ This section explains how to secure access to your Sendbird organization and use
 
 ### 2. Environment separation
 
-This section describes how Delight AI agent separates development and production environments to support secure testing and reliable deployment. Clear separation between test and live agents helps reduce the risk of unintended data exposure.
+This section describes how Delight AI agent separates Development, Staging, and Production environments to support secure testing and reliable deployment. Clear separation between test and live agents helps reduce the risk of unintended data exposure.
 
 * [Environment separation](environment-separation.md)
 
