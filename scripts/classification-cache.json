@@ -9,8 +9,8 @@
     "js/react-native/docs/README.md": {
       "publish": true,
       "syncBack": true,
-      "reason": "This is a SDK getting started/quickstart guide for React Native. It contains user-facing documentation about initializing and using the Delight AI agent Messenger SDK, which should be published to the docs site and kept in sync with the source repository.",
-      "classifiedAt": "2026-02-12T08:51:10.756Z"
+      "reason": "This is a getting started/setup guide for the React Native SDK, which is user-facing product documentation that should be published to the docs site and synced back from edits.",
+      "classifiedAt": "2026-03-09T09:22:47.498Z"
     },
     "js/react-native/docs/features/README.md": {
       "publish": true,
@@ -21,8 +21,8 @@
     "js/react-native/docs/features/conversations.md": {
       "publish": true,
       "syncBack": true,
-      "reason": "SDK feature guide documenting conversations functionality for React Native. This is user-facing product documentation that should be published and synced back to the source repository.",
-      "classifiedAt": "2026-02-12T08:51:15.133Z"
+      "reason": "SDK feature guide documenting conversation functionality. This is user-facing product documentation for the React Native SDK that should be published and kept in sync with the source repository.",
+      "classifiedAt": "2026-03-09T09:23:21.625Z"
     },
     "js/react-native/docs/features/messages.md": {
       "publish": true,
