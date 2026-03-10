@@ -41,7 +41,7 @@ You can edit agents only in **Development**. **Staging** and **Production** are 
 
 First, the **Home** page showcases all the workspaces and AI agents you've built in them. You can manage your workspace settings and create more AI agents when needed.
 
-<figure><img src="../.gitbook/assets/home-3states.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/home-3states.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The AI agent list view may vary based on your [role and permission](https://docs.delight.ai/roles-and-permissions) settings within the workspace.
@@ -53,7 +53,7 @@ Depending on your service environment, you might need more than one AI agents - 
 
 * Name the agent (visible to users).
 
-Each new agent will come with three environments: [Development, Staging, and Production](ai-agent-home.md#development-vs-production-environments).
+Each new agent will come with three environments: [Development, Staging, and Production](./#development-vs-production-environments).
 
 {% hint style="info" %}
 To delete an agent, contact one of our Delight representatives.
@@ -63,7 +63,7 @@ To delete an agent, contact one of our Delight representatives.
 
 You can find the Workspace settings button above the list of AI agents. This allows you to specify the system prompt to apply to AI agents across the workspace, build knowledge assets that will be shared among them, and manage 3rd party platform integrations, and more.
 
-<figure><img src="../.gitbook/assets/Workspace settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Workspace settings.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -71,7 +71,7 @@ You can find the Workspace settings button above the list of AI agents. This all
 
 The **Overview** page provides at-a-glance insight into an AI agent's performance and user satisfaction. You can also deploy or revert changes you've made in **Development** to **Staging** and **Production**.
 
-<figure><img src="../.gitbook/assets/Overview (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Overview (1).png" alt=""><figcaption></figcaption></figure>
 
 ### View and deploy changes
 
@@ -97,9 +97,9 @@ This allows you to:
 
 Click **History** in **Staging** and **Production** environments to view past deployments.
 
-<figure><img src="../.gitbook/assets/history.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/history.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Deployment history.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Deployment history.png" alt=""><figcaption></figcaption></figure>
 
 Each record shows:
 
@@ -150,4 +150,4 @@ Toggling the agent in one environment doesn’t affect the other environments.
 
 The **Overview** page also displays key metrics for AI agent performance and user satisfaction over the selected time period. The default range is the last 7 days, and vertical lines on the graph indicate version updates.
 
-<figure><img src="../.gitbook/assets/insights.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/insights.png" alt=""><figcaption></figcaption></figure>
