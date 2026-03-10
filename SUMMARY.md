@@ -4,8 +4,9 @@
 
 ## Dashboard guide
 
-* [AI agent - Home and Overview](dashboard-guide/ai-agent-home/README.md)
+* [AI agent - Home and Overview](dashboard-guide/ai-agent-home.md)
   * [Gradual deployment](dashboard-guide/ai-agent-home/gradual-deployment.md)
+* [Steward](dashboard-guide/steward.md)
 * [Users](dashboard-guide/users/README.md)
   * [Memory](dashboard-guide/users/memory.md)
 * [Shared assets](dashboard-guide/shared-assets/README.md)
@@ -64,7 +65,6 @@
   * [RingCentral](dashboard-guide/integrations/ringcentral.md)
 * [Roles and permissions](dashboard-guide/roles-and-permissions.md)
 * [Webhook](dashboard-guide/webhook.md)
-* [Steward](dashboard-guide/steward.md)
 
 ## SDK Docs
 
