@@ -6,9 +6,21 @@ hidden: true
 
 Implement a strategic deployment plan when rolling out a new version to your users. Delight AI agent supports a strategic deployment system for a stable introduction of updates with two different deployment plans.&#x20;
 
-## Full deployment vs. gradual deployment
+## How it works
 
-When deploying changes in your AI agent from the **Staging** environment to **Production**, you can choose either options:
+In Delight AI agent, deployment flow among environments follows as described below:
+
+Development environment: explore features offered within the AI agent and tailor the agent to best suit your service needs. Deploy the changes you've made to the **Staging** environment.
+
+Staging environment: test out the update introduced from the **Development** environment before rolling it out to live service. Make sure that your AI agent is ready for real-life interaction with your users. Once it's ready, deploy the latest version to **Production**.
+
+Production environment: monitor AI agent's performance and customer satisfaction (CSAT) ratings. Analyze its key metrics and find room for improvement.&#x20;
+
+As AI agent deployment from Staging to Production merits more discreet approach, Delight AI agent supports two different rollout strategy — full deployment and gradual deployment.
+
+### Full deployment vs. gradual deployment
+
+When deploying changes in your AI agent from **Staging** to **Production**, you can choose either options:
 
 <table><thead><tr><th width="156.59375">Strategy</th><th width="351.453125">Description</th><th>Affected users</th></tr></thead><tbody><tr><td>Gradual deployment</td><td>Deploys the new version to a small portion of the user base first then gradually expand the coverage.</td><td>Can adjust the traffic split at any time.<br>e.g., 10% → 30% → 100%</td></tr><tr><td>Full deployment</td><td>Deploys the new version to all users at once.</td><td>Apply to 100% of users</td></tr></tbody></table>
 
