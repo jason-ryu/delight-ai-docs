@@ -27,4 +27,4 @@ The following table summarizes what features each integration supports.
 \*[Genesys](genesys.md) and RingCentral integrations are available for [Voice](../build/channels/voice.md) channels only.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
