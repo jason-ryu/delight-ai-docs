@@ -1,6 +1,6 @@
 # Low CSAT categorization
 
-In Delight AI agent, when a user gives a low CSAT (Customer Satisfaction) score — one or two out of five — the AI agent automatically analyzes the conversation and classifies it into up to two categories that explain the likely cause of dissatisfaction.
+When a user gives a low CSAT (Customer Satisfaction) score — one or two out of five — the AI agent automatically analyzes the conversation and classifies it into up to two categories that explain the likely cause of dissatisfaction.
 
 Each categorized conversation includes an AI-generated reason summary, so you can quickly understand what went wrong without reviewing the full conversation.
 
