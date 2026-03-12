@@ -22,7 +22,7 @@ With Low CSAT categorization, you can:
 
 | Category | Description |
 |----------|-------------|
-| Inadequate compensation | Compensation offered — such as coupons or refunds — may not have met user expectations. |
+| Inadequate compensation | Compensation offered may not have met user expectations. This may stem from how the AI agent communicated or handled the compensation, or from dissatisfaction with the service or situation itself. |
 | Inadequate response | AI agent's response may not have adequately addressed the user's question, possibly due to gaps in your knowledge base or instructions. |
 | Escalation refusal | User declined the offer to connect with a human agent, despite the AI suggesting a handoff. |
 | Situation frustration | User likely expressed frustration with the situation itself — such as shipping delays, service outages, or product issues — rather than the AI agent's response. |
@@ -65,7 +65,7 @@ Once you've reviewed Low CSAT conversations and identified patterns, consider th
 
 ### Focus on AI-attributable categories first
 
-Conversations categorized as **Inadequate response** or **Inadequate compensation** are the most direct signal that changes to your AI agent configuration may help. Start by reviewing a sample of these conversations to understand what's going wrong.
+Conversations categorized as **Inadequate response** are the most direct signal that changes to your AI agent configuration may help. Start by reviewing a sample of these conversations to understand what's going wrong. For **Inadequate compensation**, check whether the issue is how the AI agent handled the compensation or whether users are dissatisfied with the compensation itself — the former can be improved through configuration changes, while the latter may require a policy review.
 
 ### Use categories to prioritize, not just to track volume
 
