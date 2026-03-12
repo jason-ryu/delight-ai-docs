@@ -20,9 +20,11 @@ With Low CSAT categorization, you can:
 - View the AI-generated category and reason in the conversation detail view.
 - Identify patterns across dissatisfaction categories to improve AI agent performance.
 
+The following categories are used to classify the likely cause of dissatisfaction.
+
 | Category | Description |
 |----------|-------------|
-| Inadequate compensation | Compensation offered may not have met user expectations. This may stem from how the AI agent communicated or handled the compensation, or from dissatisfaction with the service or situation itself. |
+| Inadequate compensation | Compensation offered may not have met user expectations, either due to how the AI agent handled it or dissatisfaction with the compensation policy itself. |
 | Inadequate response | AI agent's response may not have adequately addressed the user's question, possibly due to gaps in your knowledge base or instructions. |
 | Escalation refusal | User declined the offer to connect with a human agent, despite the AI suggesting a handoff. |
 | Situation frustration | User likely expressed frustration with the situation itself — such as shipping delays, service outages, or product issues — rather than the AI agent's response. |
