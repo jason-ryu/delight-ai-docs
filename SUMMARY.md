@@ -44,6 +44,7 @@
   * [Insights](dashboard-guide/evaluate/insights.md)
   * [Reports](dashboard-guide/evaluate/reports/README.md)
     * [Conversations](dashboard-guide/evaluate/reports/conversations/README.md)
+      * [Low CSAT](dashboard-guide/evaluate/reports/conversations/low-csat.md)
       * [How to evaluate AI agent responses](dashboard-guide/evaluate/reports/conversations/how-to-evaluate-ai-agent-responses.md)
       * [Conversation group](dashboard-guide/evaluate/reports/conversations/conversation-group.md)
     * [Flagged messages](dashboard-guide/evaluate/reports/flagged-messages.md)
