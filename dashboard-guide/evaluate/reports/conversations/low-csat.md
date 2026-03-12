@@ -1,6 +1,6 @@
 # Low CSAT
 
-In Delight AI agent, the low customer satisfaction (CSAT) feature helps you identify conversations where customers rated one or two on the CSAT survey. When a customer submits a low score, the AI agent automatically analyzes the conversation and assigns up to two categories that explain the likely cause of dissatisfaction.
+In Delight AI agent, the low customer satisfaction feature, called Low CSAT, helps you identify conversations where users rated one or two on the CSAT survey. When a user submits a low score, the AI agent automatically analyzes the conversation and assigns up to two categories that explain the likely cause of dissatisfaction.
 
 Instead of manually reviewing each conversation, you can filter by dissatisfaction category and check the AI-generated reason to understand what went wrong.
 
@@ -38,8 +38,8 @@ The AI agent classifies low CSAT conversations into the following five categorie
 | Category | Description |
 |----------|-------------|
 | Inadequate compensation | Dissatisfaction with compensation offered, such as coupons or refunds. |
-| Inadequate response | AI agent's response did not adequately address the customer's question. |
-| Escalation refusal | Customer declined the offer to connect with a human agent. |
+| Inadequate response | AI agent's response did not adequately address the user's question. |
+| Escalation refusal | User declined the offer to connect with a human agent. |
 | Situation frustration | Frustration with external factors such as delays or service quality issues. |
 | Others | Does not fall under any of the above categories. |
 
