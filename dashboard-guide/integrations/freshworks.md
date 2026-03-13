@@ -58,6 +58,10 @@ You will then see a confirmation label on the **Freshworks** tile indicating tha
 
 Once connected, you can try out a handoff on our AI agent widget.
 
+{% hint style="info" %}
+Make sure you have an actionbook with the `/Handoff` command enabled for your AI agent. If not, see [Creating an actionbook](../shared-assets/actionbooks/README.md#creating-an-actionbook).
+{% endhint %}
+
 1. Go to **Build > Conversation settings > Transfer to human agent** and select **Freshworks** for a handoff platform.
 2. Start a conversation on the AI agent widget in Delight AI dashboard.
 3. Then click on the **Handoff** button to transfer the conversation to Freshworks.

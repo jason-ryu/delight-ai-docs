@@ -35,6 +35,15 @@ Also, you will see a `CONNECTED` label on the **Sprinklr** tile indicating that 
 
 ***
 
+## Set up handoff
+
+To enable handoff to Sprinklr on Messenger channels:
+
+1. Select **Sprinklr** as your handoff platform in [**Build > Channels > Messenger > Conversation settings**](../build/channels/messenger/conversation-settings/README.md#transfer-to-human-agent).
+2. Make sure you have an actionbook with the `/Handoff` command enabled for your AI agent. If not, see [Creating an actionbook](../shared-assets/actionbooks/README.md#creating-an-actionbook).
+
+***
+
 ## What's next
 
 ### Connect Sprinklr account as knowledge.

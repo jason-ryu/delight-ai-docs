@@ -19,6 +19,7 @@ Handoff to Desk works differently depending on your AI agent's environment:
     * [SDK DOCS > JavaScript (CDN) > Context object](../../../sdk-docs/javascript-cdn/context-object.md)
     * [SDK DOCS > React (npm) > Context object](../../../sdk-docs/react-npm/context-object.md)
     * [PLATFORM API > Context object for messenger channel](../../../platform-api/context-object-for-messenger-channel.md)
+* An actionbook with the `/Handoff` command is enabled for your AI agent. See [Creating an actionbook](../../shared-assets/actionbooks/README.md#creating-an-actionbook).
 * Desk assignment and priority rules are configured.
   * To configure the rules, go to **Settings > Desk > Rules** on the [Sendbird dashboard](https://dashboard.sendbird.com/application-id/desk/settings/assignment_rules). For more information, see [Desk guide](https://sendbird.com/docs/desk/guide/v1/rules/assignment-rules).
   * If you don't have any assignment or priority rules configured in Desk, tickets will be assigned to the default team with medium priority.
