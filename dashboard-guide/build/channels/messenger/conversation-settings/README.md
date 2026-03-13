@@ -5,7 +5,7 @@ The **Conversation settings** tab lets you define when and how conversations sta
 You can find this page in:\
 **AI agent (Development) > Build > Channel > Messenger > Conversation settings**.
 
-You can edit in the **Development** environment and deploy them to apply changes to **Staging** and **Production**.
+You can edit these settings in the **Development** environment and deploy to apply changes to **Staging** and **Production**.
 
 ***
 
@@ -32,7 +32,7 @@ To personalize messages, the AI agent can use the following sources:
 <figure><img src="../../../../../.gitbook/assets/Group 1000005079.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-This feature also requires deployment for live action. Make sure deploy the change up to **Production**.
+This feature also requires deployment for live action. Make sure to deploy the changes to **Production**.
 {% endhint %}
 
 #### How to use
@@ -65,7 +65,7 @@ Provide information that customers should be aware of before starting a conversa
 
 ## **Transfer to human agent**
 
-Enable human-agent handoff and select the support platform—set platform credentials first to activate this feature. 3rd-party platforms that we currently support for handoff include:
+Enable human-agent handoff and select the support platform—set platform credentials first to activate this feature. Third-party platforms currently supported for handoff include:
 
 * Zendesk
 * Freshworks
@@ -76,7 +76,7 @@ Enable human-agent handoff and select the support platform—set platform creden
 <figure><img src="../../../../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-This setting enables the integration, but handoff won't work until you create an [actionbook](../../../../shared-assets/actionbooks/README.md) that includes the `/Handoff` command. The actionbook defines when and how the AI agent transfers the conversation to a human agent.
+This setting enables the integration, but handoff won't work until you create an [actionbook](../../../../shared-assets/actionbooks/README.md#creating-an-actionbook) that includes the `/Handoff` command. The actionbook defines when and how the AI agent transfers the conversation to a human agent.
 {% endhint %}
 
 #### Example actionbook
@@ -92,11 +92,11 @@ This setting enables the integration, but handoff won't work until you create an
 
 ## **Check resolution & satisfaction**
 
-Configure how to respond to customers when their conversation went well or bad.
+Configure how the AI agent responds based on user feedback.
 
 <figure><img src="../../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="245.5546875">Field</th><th>Description</th></tr></thead><tbody><tr><td>Ask if issue was resolved</td><td>Set a message to ask the customer for confirmation when the AI agent detects that their issue may be resolved.</td></tr><tr><td>Positive 👍</td><td><p>Define how the AI agent should handle positive feedback from customers.</p><ul><li>Feedback: Set the label for the button that customers can select to indicate their issue has been resolved.</li><li>Action: The conversation will automatically close when the customer selects this button. Provide a message to confirm the conversation’s closure.</li><li>Conversation status: Once positive feedback is received, the conversation status will always be marked as <code>Resolved</code>.</li></ul></td></tr><tr><td>Negative 👎</td><td><p>Define how the AI agent should handle negative feedback from customers.</p><ul><li>Feedback: Set the label for the button that customers can select to indicate their issue hasn’t been resolved.</li><li>Action: The conversation will automatically close when the customer selects this button. Provide a message to confirm the conversation’s closure.</li><li>Conversation status: Once positive feedback is received, the conversation status will always be marked as <code>Unresolved</code>.</li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="245.5546875">Field</th><th>Description</th></tr></thead><tbody><tr><td>Ask if issue was resolved</td><td>Set a message to ask the customer for confirmation when the AI agent detects that their issue may be resolved.</td></tr><tr><td>Positive 👍</td><td><p>Define how the AI agent should handle positive feedback from customers.</p><ul><li>Feedback: Set the label for the button that customers can select to indicate their issue has been resolved.</li><li>Action: The conversation will automatically close when the customer selects this button. Provide a message to confirm the conversation’s closure.</li><li>Conversation status: Once positive feedback is received, the conversation status will always be marked as <code>Resolved</code>.</li></ul></td></tr><tr><td>Negative 👎</td><td><p>Define how the AI agent should handle negative feedback from customers.</p><ul><li>Feedback: Set the label for the button that customers can select to indicate their issue hasn’t been resolved.</li><li>Action: The conversation will automatically close when the customer selects this button. Provide a message to confirm the conversation’s closure.</li><li>Conversation status: Once negative feedback is received, the conversation status will always be marked as <code>Unresolved</code>.</li></ul></td></tr></tbody></table>
 
 ***
 

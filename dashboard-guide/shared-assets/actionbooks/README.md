@@ -2,13 +2,13 @@
 
 **Actionbooks** are structured playbooks that provide AI agents with detailed guidance for handling specific user scenarios. They contain step-by-step instructions that help agents deliver consistent and accurate responses across common support situations like subscription cancellations, order updates, or account inquiries.
 
-Each actionbook can reference other shared assets such as tools, message templates, or even other actionbooks. You can also escalate to a human agent or highlight important steps using feature like handoff and pin.
+Each actionbook can reference other shared assets such as tools, message templates, or even other actionbooks. You can also escalate to a human agent or highlight important steps using features like handoff and pin.
 
 ***
 
 ## Where actionbooks live
 
-Actionbooks are a shared asset created and managed at the **workspace level,** but it can be selectively enabled or disabled per AI agent. This two-level setup allows you to centrally manage actionbooks while still tailoring usage per agent without duplicating content.
+Actionbooks are shared assets created and managed at the **workspace level**, but they can be selectively enabled or disabled per AI agent. This two-level setup allows you to centrally manage actionbooks while still tailoring usage per agent without duplicating content.
 
 #### 1. Workspace-level (Shared asset)
 
@@ -33,10 +33,10 @@ Actionbooks are a shared asset created and managed at the **workspace level,** b
 
 ## Creating an actionbook
 
-Follow the instsructions below to create a workflow that Delight AI agent can follow when handling customer inquiries.
+Follow the instructions below to create a workflow that Delight AI agent can follow when handling customer inquiries.
 
 {% hint style="success" %}
-[Our tutorial ](../../../tutorials/actionbook-best-practices.md)offers the best practices you can refer to when building your own actionbooks.
+[Our tutorial](../../../tutorials/actionbook-best-practices.md)offers the best practices you can refer to when building your own actionbooks.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
@@ -51,7 +51,7 @@ Follow the instsructions below to create a workflow that Delight AI agent can fo
 * **All countries**: This actionbook is applied to users in all countries. The content will be used regardless of the user's country setting.
 * **Specific countries:** This actionbook is only applied to users in the countries you specify.
 
-4. Write your **step-by-step instructions**.
+7. Write your **step-by-step instructions**.
 
 ***
 
