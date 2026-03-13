@@ -67,6 +67,10 @@ Available slash commands (`/`):
 * `/Handoff` — Escalate to a human agent
 * `/Pin` — Create an anchor by clicking on **Pin,** then use the slash command to jump to that point.
 
+{% hint style="info" %}
+Messenger channels require an actionbook with `/Handoff` to trigger handoff. Make sure you have [set up a support platform](../../build/channels/messenger/conversation-settings/README.md#transfer-to-human-agent) in your Messenger conversation settings before using this command.
+{% endhint %}
+
 Referencing other shared assets helps you avoid repeating the same logic in multiple places. You can update the asset once, and it will apply wherever it’s used. For more detailed information on actionbook best practices, see the [Actionbook best practices](../../../tutorials/actionbook-best-practices.md) page.
 
 ***

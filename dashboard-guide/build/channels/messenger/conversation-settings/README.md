@@ -75,6 +75,19 @@ Enable human-agent handoff and select the support platform—set platform creden
 
 <figure><img src="../../../../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
+This setting enables the integration, but handoff won't work until you create an [actionbook](../../../../shared-assets/actionbooks/README.md) that includes the `/Handoff` command. The actionbook defines when and how the AI agent transfers the conversation to a human agent.
+{% endhint %}
+
+#### Example actionbook
+
+**When to use:** The user asks to speak with a human agent.
+
+```
+1. Say: I'll connect you with a human agent who can help.
+2. /Handoff
+```
+
 ***
 
 ## **Check resolution & satisfaction**
