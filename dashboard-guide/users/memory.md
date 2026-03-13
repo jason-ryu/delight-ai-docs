@@ -30,7 +30,7 @@ Memory access / Roles and permissions
 
 The AI agent can gather conversation snippets to build a personalized database for each. These snippets are called **Memories**. Building memories enables the agent to deliver tailored customer support and optimize the consultation process by understanding each user's unique characteristics. Navigate to **Workspace settings > Users > User list** to access and manage user memories in each user's **User details** view.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

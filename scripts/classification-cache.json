@@ -11,6 +11,8 @@
       "syncBack": true,
       "reason": "This is a getting started/setup guide for the React Native SDK, which is user-facing product documentation that should be published to the docs site and synced back from edits.",
       "classifiedAt": "2026-03-09T09:22:47.498Z"
+      "reason": "This is a getting started/initialization guide for the React Native SDK - a core product documentation file that should be published and kept in sync with the source repository.",
+      "classifiedAt": "2026-03-09T09:22:33.619Z"
     },
     "js/react-native/docs/features/README.md": {
       "publish": true,
@@ -23,6 +25,8 @@
       "syncBack": true,
       "reason": "SDK feature guide documenting conversation functionality. This is user-facing product documentation for the React Native SDK that should be published and kept in sync with the source repository.",
       "classifiedAt": "2026-03-09T09:23:21.625Z"
+      "reason": "SDK feature guide documenting conversations functionality in React Native. This is user-facing product documentation that describes core features and should be published and kept in sync with the source repository.",
+      "classifiedAt": "2026-03-09T09:23:07.647Z"
     },
     "js/react-native/docs/features/messages.md": {
       "publish": true,

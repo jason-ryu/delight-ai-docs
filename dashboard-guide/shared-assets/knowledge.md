@@ -41,7 +41,7 @@ Knowledge is a shared asset created and managed at the **workspace level**, but 
 * Enable or disable knowledge items for each AI agent.
 * Useful when AI agents need different scopes of knowledge.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

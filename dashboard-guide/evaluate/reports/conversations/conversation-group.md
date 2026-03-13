@@ -33,7 +33,7 @@ To learn more, see [our guide on Follow-up triggers](../../../shared-assets/foll
 
 Various channels used to address a user's inquiry will be grouped into one conversation group called **Conversation group** as shown in the screenshot below.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Channel sequence
 

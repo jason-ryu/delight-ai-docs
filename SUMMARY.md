@@ -5,6 +5,8 @@
 ## Dashboard guide
 
 * [AI agent - Home and Overview](dashboard-guide/ai-agent-home.md)
+  * [Deployment](dashboard-guide/ai-agent-home/gradual-deployment.md)
+* [Steward](dashboard-guide/steward.md)
 * [Users](dashboard-guide/users/README.md)
   * [Memory](dashboard-guide/users/memory.md)
 * [Shared assets](dashboard-guide/shared-assets/README.md)
