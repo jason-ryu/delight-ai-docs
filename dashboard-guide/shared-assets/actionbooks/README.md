@@ -36,7 +36,7 @@ Actionbooks are shared assets created and managed at the **workspace level**, bu
 Follow the instructions below to create a workflow that Delight AI agent can follow when handling customer inquiries.
 
 {% hint style="success" %}
-[Our tutorial](../../../tutorials/actionbook-best-practices.md)offers the best practices you can refer to when building your own actionbooks.
+[Our tutorial](../../../tutorials/actionbook-best-practices.md) offers the best practices you can refer to when building your own actionbooks.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
