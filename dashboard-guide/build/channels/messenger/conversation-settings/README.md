@@ -92,7 +92,7 @@ This setting enables the integration, but handoff won't work until you create an
 
 ## **Check resolution & satisfaction**
 
-Configure how the AI agent responds based on user feedback.
+Configure how to respond to customers when their conversation went well or bad.
 
 <figure><img src="../../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
