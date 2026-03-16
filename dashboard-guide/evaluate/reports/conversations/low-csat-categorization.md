@@ -5,7 +5,7 @@ When a user gives a low CSAT (Customer Satisfaction) score — one or two out of
 Each categorized conversation includes an AI-generated reason summary, so you can quickly understand what went wrong without reviewing the full conversation.
 
 {% hint style="info" %}
-Low CSAT categories and reasons are available for conversations created after March 3, 2026.
+Low CSAT categorization is available for conversations created after March 3, 2026.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/conversation_list.png" alt="Conversations list in the Evaluate tab showing CSAT scores" width="800"><figcaption></figcaption></figure>
@@ -40,7 +40,7 @@ Each conversation can be assigned up to two categories. When **Escalation refusa
 
 ### Step 1: Filter conversations in dashboard
 
-1. Navigate to **Evaluate** > **Conversations**.
+1. Navigate to **Evaluate > Reports > Conversation**.
 2. Click the **CSAT** filter dropdown and select **Low CSAT scores (1, 2)**. The list updates to show only conversations with a low CSAT score.
 
 <figure><img src="../../../../.gitbook/assets/CSAT_score_clicked.png" alt="CSAT filter dropdown with Low CSAT selected" width="375"><figcaption></figcaption></figure>
