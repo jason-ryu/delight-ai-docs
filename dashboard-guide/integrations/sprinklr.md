@@ -33,8 +33,6 @@ Also, you will see a `CONNECTED` label on the **Sprinklr** tile indicating that 
 
 <figure><img src="../../.gitbook/assets/image (65).png" alt="" width="326"><figcaption></figcaption></figure>
 
-***
-
 ### Step 2: Set up handoff
 
 To enable handoff to Sprinklr on Messenger channels:
