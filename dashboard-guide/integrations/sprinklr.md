@@ -35,7 +35,7 @@ Also, you will see a `CONNECTED` label on the **Sprinklr** tile indicating that 
 
 ***
 
-## Set up handoff
+### Step 2: Set up handoff
 
 To enable handoff to Sprinklr on Messenger channels:
 
