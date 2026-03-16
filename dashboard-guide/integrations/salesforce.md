@@ -122,9 +122,13 @@ For Delight AI agent, register the following two URLs as a remote site. Your Sen
 
 Once connected, you can try out a handoff on our AI agent widget.
 
-1. Go to **Build > Conversation settings > Transfer to human agent** and click Edit at the top right corner of your browser.
+{% hint style="info" %}
+Make sure you have an actionbook with the `/Handoff` command enabled for your AI agent.
+{% endhint %}
+
+1. Go to [**Build > Conversation settings > Transfer to human agent**](../build/channels/messenger/conversation-settings/README.md#transfer-to-human-agent) and click Edit at the top right corner of your browser.
 2. Select **Salesforce** for a handoff platform.
-3. Start a conversation on the AI agent widget in Delight AI agent dahsboard.
+3. Start a conversation on the AI agent widget in Delight AI agent dashboard.
 4. Then click on the **Handoff** button to transfer the conversation to Salesforce Connector in Salesforce Service Cloud.
 5. See the summary of the AI agent conversation successfully transferred to the Connector.
 
