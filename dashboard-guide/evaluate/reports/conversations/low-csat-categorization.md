@@ -10,31 +10,25 @@ Low CSAT categorization is available for conversations created after March 3, 20
 
 <figure><img src="../../../../.gitbook/assets/conversation_list.png" alt="Conversations list in the Evaluate tab showing CSAT scores" width="800"><figcaption></figcaption></figure>
 
----
+***
 
 ## What you can do
 
 With Low CSAT categorization, you can:
 
-- Filter conversations with low CSAT scores by dissatisfaction category.
-- View the AI-generated category and reason in the conversation detail view.
-- Identify patterns across dissatisfaction categories to improve AI agent performance.
+* Filter conversations with low CSAT scores by dissatisfaction category.
+* View the AI-generated category and reason in the conversation detail view.
+* Identify patterns across dissatisfaction categories to improve AI agent performance.
 
 The following categories are used to classify the likely cause of dissatisfaction.
 
-| Category | Description |
-|----------|-------------|
-| Inadequate compensation | Compensation offered may not have met user expectations, either due to how the AI agent handled it or dissatisfaction with the compensation policy itself. |
-| Inadequate response | AI agent's response may not have adequately addressed the user's question, possibly due to gaps in your knowledge base or instructions. |
-| Escalation refusal | User declined the offer to connect with a human agent, despite the AI suggesting a handoff. |
-| Situation frustration | User likely expressed frustration with the situation itself — such as shipping delays, service outages, or product issues — rather than the AI agent's response. |
-| Others | Does not fall under any of the above categories. |
+<table><thead><tr><th width="256.59765625">Category</th><th>Description</th></tr></thead><tbody><tr><td>Inadequate compensation</td><td>Compensation offered may not have met user expectations, either due to how the AI agent handled it or dissatisfaction with the compensation policy itself.</td></tr><tr><td>Inadequate response</td><td>AI agent's response may not have adequately addressed the user's question, possibly due to gaps in your knowledge base or instructions.</td></tr><tr><td>Escalation refusal</td><td>User declined the offer to connect with a human agent, despite the AI suggesting a handoff.</td></tr><tr><td>Situation frustration</td><td>User likely expressed frustration with the situation itself — such as shipping delays, service outages, or product issues — rather than the AI agent's response.</td></tr><tr><td>Others</td><td>Does not fall under any of the above categories.</td></tr></tbody></table>
 
 {% hint style="info" %}
 Each conversation can be assigned up to two categories. When **Escalation refusal** and **Situation frustration** co-occur, the refusal likely stems from high situational frustration or an issue beyond the AI's capabilities.
 {% endhint %}
 
----
+***
 
 ## How to use Low CSAT categorization
 
@@ -59,7 +53,7 @@ Click a conversation in the filtered list to open the conversation detail view. 
 
 <figure><img src="../../../../.gitbook/assets/conversation_details.png" alt="Conversation detail view with Insights panel showing Low CSAT category and reason" width="800"><figcaption></figcaption></figure>
 
----
+***
 
 ## What's next
 
@@ -80,4 +74,3 @@ After updating your AI agent's instructions, knowledge sources, or flows, use th
 ### Monitor Others for emerging patterns
 
 Periodically review conversations categorized as **Others** to identify recurring issues that may warrant a new category or specific action.
-
