@@ -123,7 +123,7 @@ For Delight AI agent, register the following two URLs as a remote site. Your Sen
 Once connected, you can try out a handoff on our AI agent widget.
 
 {% hint style="info" %}
-Make sure you have an actionbook with the `/Handoff` command enabled for your AI agent. If not, see [**Build > Channels > Messenger > Conversation settings**](../build/channels/messenger/conversation-settings/README.md#transfer-to-human-agent).
+Make sure you have an actionbook with the `/Handoff` command enabled for your AI agent.
 {% endhint %}
 
 1. Go to [**Build > Conversation settings > Transfer to human agent**](../build/channels/messenger/conversation-settings/README.md#transfer-to-human-agent) and click Edit at the top right corner of your browser.
