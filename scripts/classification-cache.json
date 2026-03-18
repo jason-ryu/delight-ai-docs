@@ -75,8 +75,14 @@
     "js/cdn/docs/features/conversations.md": {
       "publish": true,
       "syncBack": true,
-      "reason": "SDK feature guide documenting conversations functionality. This is a user-facing product documentation file that explains core features and should be published to the docs site. Changes made in docs should sync back to the source repository.",
-      "classifiedAt": "2026-03-06T06:25:36.456Z"
+      "reason": "SDK feature guide documenting conversations functionality. This is user-facing product documentation that should be published to docs site and changes should sync back to the source repository.",
+      "classifiedAt": "2026-03-18T07:58:10.220Z"
+    },
+    "js/cdn/docs/README.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "This is a SDK getting started/setup guide for JavaScript CDN integration. It's user-facing product documentation that should be published and kept in sync with the source repository.",
+      "classifiedAt": "2026-03-18T07:57:26.982Z"
     }
   }
 }
