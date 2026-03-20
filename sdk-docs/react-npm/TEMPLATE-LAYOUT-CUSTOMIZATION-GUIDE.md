@@ -1,6 +1,6 @@
 # Template-Based Layout Component Customization Guide
 
-This guide explains how to customize Delight AI agent Messenger’s UI by replacing or hiding layout components using React Context.
+This guide explains how to customize Delight AI agent Messenger's UI by replacing or hiding layout components using React Context.
 
 This guide explains:
 - [Overview](#overview)
@@ -36,7 +36,9 @@ The template system uses React Context to inject custom components, allowing you
 - Hide unwanted components by returning `<></>` (or `null`)
 - Maintain the original layout structure while changing specific behaviors
 
-**Note**: All layout customizations must be wrapped within `AgentProviderContainer` along with the `Conversation` component to function properly. The examples below show individual component customizations, but see the [Putting It All Together](#putting-it-all-together) section for the complete integration pattern.
+{% hint style="info" %}
+All layout customizations must be wrapped within `AgentProviderContainer` along with the `Conversation` component to function properly. The examples below show individual component customizations, but see the [Putting It All Together](#putting-it-all-together) section for the complete integration pattern.
+{% endhint %}
 
 ---
 
@@ -67,12 +69,18 @@ IncomingMessageLayout.components = {
   SenderAvatar,      // Display sender's avatar
   SentTime,          // Show message timestamp
   MessageBody,       // Main message content
+  TextMessageBody,          // Text message content
+  MediaMessageBody,         // Image/video message content
+  FileMessageBody,          // File attachment content
+  MultipleFilesMessageBody, // Multiple file attachments content
   TypingIndicator,   // Typing animation
   SuggestedReplies,  // Quick reply buttons
   MessageTemplate,   // Rich message templates
+  CustomMessageTemplate, // Custom message templates
   CTAButton,         // Call-to-action buttons
   Citation,          // Reference citations
   Form,              // Interactive forms
+  Feedback,          // Message feedback
   MessageLogs,       // Debug/log information
 }
 ```
@@ -155,6 +163,10 @@ OutgoingMessageLayout.components = {
   SendingStatus,  // Show sending/sent/failed status
   SentTime,       // Display timestamp
   MessageBody,    // Message content
+  TextMessageBody,          // Text message content
+  MediaMessageBody,         // Image message content
+  FileMessageBody,          // File attachment content
+  MultipleFilesMessageBody, // Multiple file attachments content
 }
 ```
 
@@ -505,7 +517,7 @@ const EmptyComponent = () => <></>;
 
 export const MyCustomMessenger = () => {
   return (
-    <AgentProviderContainer appearance={{ theme: 'light' }}>
+    <AgentProviderContainer>
       {/* Apply all customizations */}
       <IncomingMessageLayout.Template>
         <IncomingMessageLayout.MessageBody component={CustomMessageBody} />
@@ -543,3 +555,5 @@ export const MyCustomMessenger = () => {
 4. **Style Consistently**: Maintain visual consistency with your application's design system while customizing components.
 
 5. **Handle All Message Types**: Ensure custom message body components handle different message types (text, file, image, etc.).
+
+---

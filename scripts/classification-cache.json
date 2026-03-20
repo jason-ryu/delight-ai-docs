@@ -33,8 +33,8 @@
     "js/react/docs/MULTILANGUAGE.md": {
       "publish": true,
       "syncBack": true,
-      "reason": "SDK feature guide for React SDK's multi-language support functionality. This is user-facing documentation for developers implementing the SDK, similar to other feature guides (messages.md, conversations.md). Should be published and synced back to the source repo.",
-      "classifiedAt": "2026-02-12T08:50:45.266Z"
+      "reason": "This is a feature guide for the Delight AI agent SDK for React, documenting multi-language/localization functionality. It's user-facing documentation that should be published to the docs site and synced back from edits.",
+      "classifiedAt": "2026-03-18T07:57:36.666Z"
     },
     "js/react/docs/README.md": {
       "publish": true,
@@ -45,8 +45,8 @@
     "js/react/docs/TEMPLATE-LAYOUT-CUSTOMIZATION-GUIDE.md": {
       "publish": true,
       "syncBack": true,
-      "reason": "SDK feature guide for React component customization. This is a product documentation file explaining how developers can customize the Delight AI Messenger UI - directly relevant to SDK users and should be published to docs site. Changes should sync back to the source repository.",
-      "classifiedAt": "2026-02-12T08:51:19.416Z"
+      "reason": "This is a SDK feature guide for React developers on how to customize UI layout components. It's product documentation that helps users implement Delight AI agent Messenger, matching the pattern of SDK guides like messages.md or conversations.md.",
+      "classifiedAt": "2026-03-18T07:57:57.696Z"
     },
     "js/react/docs/context-object.md": {
       "publish": true,
