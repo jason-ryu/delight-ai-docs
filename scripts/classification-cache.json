@@ -45,8 +45,8 @@
     "js/react/docs/TEMPLATE-LAYOUT-CUSTOMIZATION-GUIDE.md": {
       "publish": true,
       "syncBack": true,
-      "reason": "SDK feature guide for React component customization. This is a product documentation file explaining how developers can customize the Delight AI Messenger UI - directly relevant to SDK users and should be published to docs site. Changes should sync back to the source repository.",
-      "classifiedAt": "2026-02-12T08:51:19.416Z"
+      "reason": "This is a SDK feature guide for React component customization. It's user-facing documentation explaining how to customize the Delight AI Messenger UI, which is core product documentation that should be published and kept in sync with the source repository.",
+      "classifiedAt": "2026-03-20T01:47:51.827Z"
     },
     "js/react/docs/context-object.md": {
       "publish": true,
@@ -63,8 +63,8 @@
     "js/react/docs/features/messages.md": {
       "publish": true,
       "syncBack": true,
-      "reason": "SDK feature guide documenting message types and functionality for React/JavaScript SDK. This is user-facing product documentation that should be published and kept in sync with source repos.",
-      "classifiedAt": "2026-02-12T08:51:31.357Z"
+      "reason": "SDK feature guide documenting messages functionality for React integration. This is product documentation that should be published and kept in sync with the source repository.",
+      "classifiedAt": "2026-03-20T01:49:40.018Z"
     },
     "js/cdn/docs/MULTILANGUAGE.md": {
       "publish": true,
@@ -77,6 +77,12 @@
       "syncBack": true,
       "reason": "SDK feature guide documenting conversations functionality. This is a user-facing product documentation file that explains core features and should be published to the docs site. Changes made in docs should sync back to the source repository.",
       "classifiedAt": "2026-03-06T06:25:36.456Z"
+    },
+    "js/react/docs/features/conversations.md": {
+      "publish": true,
+      "syncBack": true,
+      "reason": "SDK feature guide documenting conversations functionality in the Delight AI React SDK. This is user-facing product documentation that describes how to use a core feature.",
+      "classifiedAt": "2026-03-20T01:48:49.597Z"
     }
   }
 }
