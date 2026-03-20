@@ -1,0 +1,199 @@
+name: Style Guide Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+    paths:
+      - 'sdk-docs/**/*.md'
+      - 'platform-api/**/*.md'
+      - 'dashboard-guide/**/*.md'
+      - 'security/**/*.md'
+      - 'tutorials/**/*.md'
+
+jobs:
+  style-review:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout delight-ai-docs
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Checkout docs-editor (style guides)
+        uses: actions/checkout@v4
+        with:
+          repository: sendbird/docs-editor
+          ref: main
+          path: .docs-editor-repo
+          token: ${{ secrets.SDK_GH_BOT1_TOKEN }}
+
+      - name: Detect changed markdown files
+        id: changed-files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CHANGED=$(gh pr diff ${{ github.event.pull_request.number }} --name-only | \
+            grep -E '^(sdk-docs|platform-api|dashboard-guide|security|tutorials)/.*\.md$' | \
+            grep -v -E 'SUMMARY\.md$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "No reviewable markdown files changed."
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changed files:"
+            echo "$CHANGED"
+            echo "has_files=true" >> $GITHUB_OUTPUT
+            FILE_COUNT=$(echo "$CHANGED" | wc -l | tr -d ' ')
+            echo "file_count=$FILE_COUNT" >> $GITHUB_OUTPUT
+            echo "files<<EOF" >> $GITHUB_OUTPUT
+            echo "$CHANGED" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Review with Claude
+        if: steps.changed-files.outputs.has_files == 'true'
+        uses: anthropics/claude-code-action@v1
+        env:
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          use_sticky_comment: true
+          prompt: |
+            You are a strict style guide editor for technical documentation. Review the changed markdown files in this PR and submit your feedback as a **GitHub PR review with inline suggestions**.
+
+            ## Environment Variables
+
+            - `REPO`: ${{ github.repository }}
+            - `PR_NUMBER`: ${{ github.event.pull_request.number }}
+            - `HEAD_SHA`: ${{ github.event.pull_request.head.sha }}
+
+            ## Style Guides Location
+
+            Read these files from disk:
+            - **Layer 0** (always): `.docs-editor-repo/shared-conventions.md`
+            - **Layer 1** content-type: `.docs-editor-repo/content-type/sdk-api.md` OR `.docs-editor-repo/content-type/user-guide.md`
+            - **Layer 2** platform-format (always): `.docs-editor-repo/platform-format/aadocs.md`
+            - **Common patterns**: `.docs-editor-repo/common-patterns.md`
+            - **Editor instructions**: `.docs-editor-repo/.claude/agents/editor.md`
+
+            ## Classifier — Which Content-Type Guide Applies
+
+            | Path prefix | Content-Type Guide |
+            |---|---|
+            | `sdk-docs/` | `content-type/sdk-api.md` |
+            | `platform-api/` | `content-type/sdk-api.md` |
+            | `dashboard-guide/` | `content-type/user-guide.md` |
+            | `security/` | `content-type/user-guide.md` |
+            | `tutorials/` | `content-type/user-guide.md` |
+
+            Layer 0 (`shared-conventions.md`) and Layer 2 (`platform-format/aadocs.md`) always apply to every file.
+
+            ## Changed Files to Review
+
+            ${{ steps.changed-files.outputs.files }}
+
+            ## Process
+
+            1. Read the editor instructions at `.docs-editor-repo/.claude/agents/editor.md` and follow them.
+            2. Read ALL applicable style guide files (Layer 0 + Layer 1 + Layer 2 + common-patterns).
+            3. For each changed file:
+               a. Determine which content-type guide applies using the classifier above.
+               b. Read the file contents.
+               c. For SDK docs (`sdk-docs/`): also check the same filename across other platforms (android, ios, react-npm, react-native, javascript-cdn) for cross-platform consistency issues. Only note major discrepancies.
+               d. Review the changed file section-by-section against every rule in the applicable guides.
+               e. Classify each issue as Critical, Major, or Minor per the editor instructions.
+
+            ## Output — Inline PR Review with Suggestions
+
+            After completing the review, submit your findings as a **GitHub PR review** with inline suggestion comments. This lets the PR author click "Apply suggestion" to accept each fix directly.
+
+            ### How to submit the review
+
+            Build a JSON file (`/tmp/review.json`) with the review body and inline comments, then submit it via the GitHub API.
+
+            **Step 1: Build the review JSON**
+
+            Create `/tmp/review.json` with this structure:
+
+            ```json
+            {
+              "body": "## Style Guide Review\n\n**Files reviewed:** N\n**Summary:** Critical: N | Major: N | Minor: N\n\nSee inline comments for details.",
+              "event": "COMMENT",
+              "commit_id": "<HEAD_SHA>",
+              "comments": [
+                {
+                  "path": "sdk-docs/ios/features/messages.md",
+                  "line": 15,
+                  "body": "**Major** — \"Simply call the method\" uses a word to avoid (shared-conventions § 4).\n\n```suggestion\nCall the method to initialize the SDK.\n```"
+                },
+                {
+                  "path": "sdk-docs/ios/features/messages.md",
+                  "start_line": 20,
+                  "line": 23,
+                  "body": "**Critical** — Missing required prerequisites section (sdk-api § 2).\n\n```suggestion\n## Prerequisites\n\n- Installed the SDK\n- Initialized the client\n\n## Send a message\n```"
+                }
+              ]
+            }
+            ```
+
+            **Rules for building comments:**
+
+            - `line` = the last line of the range you want to replace (1-indexed, in the file on the HEAD commit).
+            - For single-line fixes: only set `line`.
+            - For multi-line fixes: set `start_line` (first line) and `line` (last line). Both refer to the file's line numbers at HEAD.
+            - The content inside the `suggestion` block **replaces** lines `start_line` through `line` entirely. Include the full corrected text for those lines.
+            - Each comment `body` must start with the severity (**Critical**, **Major**, or **Minor**) and cite the specific rule violated.
+            - For Minor issues where no concrete replacement is needed, omit the `suggestion` block and just describe the issue.
+            - Only comment on lines that are part of the PR diff. Use `gh pr diff` to check which lines changed.
+            - IMPORTANT: The `suggestion` block content must be the exact replacement text. Do not include markdown formatting or extra whitespace that isn't part of the actual file content.
+
+            **Step 2: Submit the review**
+
+            ```bash
+            gh api repos/${REPO}/pulls/${PR_NUMBER}/reviews \
+              --method POST \
+              --input /tmp/review.json
+            ```
+
+            ### Cross-platform notes
+
+            If you find cross-platform consistency issues for SDK docs, include them in the review `body` (the top-level summary), not as inline comments — since those other files are not part of this PR's diff.
+
+            ### If there are no issues
+
+            If no issues are found for any file, submit a review with:
+            ```json
+            {
+              "body": "## Style Guide Review\n\n**Files reviewed:** N\n\n✅ No style guide issues found.",
+              "event": "COMMENT",
+              "commit_id": "<HEAD_SHA>",
+              "comments": []
+            }
+            ```
+
+            ## Principles
+
+            1. **Every issue must cite a specific rule** from the guides. Do not invent rules.
+            2. **Provide concrete fixes** as `suggestion` blocks whenever possible.
+            3. **Practical over pedantic** — focus on issues that impact the reader.
+            4. **Edit restraint** — do not flag content that meets the guides and reads clearly.
+            5. **Never suggest removing content** unless it contradicts a specific guide rule.
+            6. **Do NOT modify any files directly.** Only submit review comments with suggestions.
+            7. **Never modify code examples** — only flag obvious syntax errors. Never suggest refactoring or reorganizing code blocks.
+            8. **Only comment on lines in the diff** — do not comment on unchanged lines.
+          allowed_tools: "Read,Glob,Grep,Bash(gh api:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(ls:*),Bash(wc:*),Bash(cat /tmp/*),Bash(python3:*),Bash(wc:*),Bash(find:*)"
+
+      - name: Skip comment (no reviewable files)
+        if: steps.changed-files.outputs.has_files == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "No doc files changed in this PR. Skipping style review."
