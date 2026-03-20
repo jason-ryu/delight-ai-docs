@@ -27,7 +27,7 @@ You can find it under the **Channels** > **Messenger** menu on the Delight AI da
 
 ![ai-agent-app-id-agent-id](https://sendbird-files.s3.ap-northeast-1.amazonaws.com/docs/aa-messenger-basic-information.png)
 
-***
+---
 
 ### Getting Started
 
@@ -68,7 +68,7 @@ messenger.initialize({
 
 Both parameters are optional and only need to be configured if required.
 
-***
+---
 
 ### Running your application
 
@@ -154,7 +154,9 @@ Once the authentication information has been successfully registered, you can la
 
 To launch and display the messenger, implement the code below:
 
-> **Note**: Replace `YOUR_APP_ID` AND `YOUR_AI_AGENT_ID` with your Application ID and AI agent ID which you can obtain from the Delight AI dashboard. To learn how do to so, refer to the [prerequisites](#prerequisites) section.
+{% hint style="info" %}
+Replace `YOUR_APP_ID` AND `YOUR_AI_AGENT_ID` with your Application ID and AI agent ID which you can obtain from the Delight AI dashboard. To learn how do to so, refer to the [prerequisites](#prerequisites) section.
+{% endhint %}
 
 ```javascript
 const messenger = await loadMessenger();
@@ -214,7 +216,7 @@ messenger.updateConfig({
 });
 ```
 
-***
+---
 
 ### Advanced Features
 
@@ -228,11 +230,11 @@ The following are available advanced features.
 const messenger = await loadMessenger({
   // Use Conversation component to display only the messenger without the launcher
   customMainComponent: ({ messenger, react }) => {
-    return (props) => {
+    return react.forwardRef((props, ref) => {
         return react.createElement(messenger.AgentProviderContainer, props, [
         react.createElement(messenger.Conversation),
       ]);
-    };
+    });
   },
 });
 messenger.initialize({
@@ -264,7 +266,9 @@ You can predefine customer-specific information such as country, language, or ot
 
 This allows for a more personalized and context-aware interaction experience.
 
-> **Important**: These settings can only be configured during initialization.
+{% hint style="warning" %}
+These settings can only be configured during initialization.
+{% endhint %}
 
 ```javascript
 const messenger = await loadMessenger();
