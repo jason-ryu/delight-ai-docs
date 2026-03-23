@@ -181,7 +181,15 @@ jobs:
 
             ## Principles
 
-            1. **Every issue must cite a specific rule** from the guides. Do not invent rules.
+            The style guides you read from `.docs-editor-repo/` are the ONLY authority. If a rule is not written in those guides, it does not exist. Apply the rules as written — do not extend, generalize, or reinterpret them.
+
+            Before flagging ANY issue, ask yourself:
+            - Can I point to the exact section and rule in the guides? If not, do not flag it.
+            - Did I check existing files in the same directory for established patterns? (editor.md Step 2 requires this.) If the existing pattern differs from your interpretation of the rule, trust the existing pattern.
+            - Am I suggesting adding content that doesn't currently exist? That violates edit restraint — only flag what is wrong, never what is missing-but-not-required.
+            - Am I interpreting a rule beyond what it literally says? For example, sdk-api § 5 prohibits the act of copying code between platforms — it does NOT prohibit code that happens to be identical across platforms. If each platform's code uses correct syntax for that platform and matches its source, it is valid regardless of similarity to other platforms.
+
+            1. **Every issue must cite a specific rule** from the guides. Do not invent rules. Do not extend rules beyond what they explicitly say.
             2. **Provide concrete fixes** as `suggestion` blocks whenever possible.
             3. **Practical over pedantic** — focus on issues that impact the reader.
             4. **Edit restraint** — do not flag content that meets the guides and reads clearly.
