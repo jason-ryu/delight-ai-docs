@@ -1,0 +1,129 @@
+# Desk integration
+
+In Delight AI agent, when a conversation has been handed off to Sendbird Desk, you can retrieve Desk ticket information directly from the AI Agent SDK. This allows you to access ticket details — such as status, priority, assigned agent, and custom fields — without integrating a separate Desk SDK.
+
+{% hint style="info" %}
+Desk ticket information is only available for conversations that have been handed off to Desk. The channel must have a linked Desk ticket for this feature to work.
+{% endhint %}
+
+This guide covers:
+- [Retrieve a Desk ticket](#retrieve-a-desk-ticket)
+- [Refresh ticket data](#refresh-ticket-data)
+- [API references](#api-references)
+- [Limitations](#limitations)
+
+---
+
+## Retrieve a Desk ticket
+
+You can retrieve a Desk ticket by its ID using the `getTicket` method on the `deskClient` instance. The ticket ID is available through `channel.conversation?.handoff?.ticketId` when a conversation has been handed off to Desk.
+
+```typescript
+const ticketId = channel.conversation?.handoff?.ticketId;
+if (!ticketId) return;
+
+const ticket = await aiAgent.deskClient.getTicket(ticketId);
+// Access ticket properties
+const status = ticket.status;
+const priority = ticket.priority;
+const assignedAgent = ticket.agent;
+```
+
+---
+
+## Refresh ticket data
+
+To get the latest ticket data, call the `refresh` method on an existing `DeskTicket` instance. This updates the ticket object with the most recent information from the server.
+
+```typescript
+await ticket.refresh();
+// The ticket now contains updated data
+const updatedStatus = ticket.status;
+```
+
+---
+
+## API references
+
+### DeskClient
+
+`DeskClient` provides methods to interact with Sendbird Desk tickets. Access it through the `deskClient` property on the AI agent instance.
+
+#### List of methods
+
+| Method | Description |
+|---|---|
+| getTicket(ticketId: number) | Retrieves a Desk ticket by its ID. Returns a `Promise<DeskTicket>`. |
+
+### DeskTicket
+
+`DeskTicket` represents a Sendbird Desk ticket linked to a conversation.
+
+#### List of properties
+
+| Property name | Type | Description |
+|---|---|---|
+| id | number | The unique ID of the ticket. |
+| name | string | The name of the ticket. |
+| status | DeskTicketStatus | Indicates the current status of the ticket. |
+| priority | DeskTicketPriority | Indicates the priority level of the ticket. |
+| agent | DeskTicketAgent \| null | The agent currently assigned to the ticket. |
+| channelUrl | string | The URL of the channel associated with the ticket. |
+| info | string \| null | Additional information about the ticket. |
+| customFields | Record<string, string> | Custom fields associated with the ticket. |
+| createdAt | number | The timestamp when the ticket was created, in Unix milliseconds format. |
+
+#### List of methods
+
+| Method | Description |
+|---|---|
+| refresh() | Refreshes the ticket data with the latest information from the server. Returns a `Promise<void>`. |
+
+### DeskTicketStatus
+
+`DeskTicketStatus` represents the status of a Desk ticket.
+
+#### List of values
+
+| Value | Description |
+|---|---|
+| INITIALIZED | The ticket has been created but not yet processed. |
+| UNASSIGNED | The ticket is not assigned to any agent. |
+| ASSIGNED | The ticket is assigned to an agent. |
+| WORK_IN_PROGRESS | The agent is actively working on the ticket. |
+| WAIT_FOR_CUSTOMER | The agent is waiting for a response from the customer. |
+| CLOSED | The ticket has been resolved and closed. |
+| PROACTIVE | The ticket was created proactively by an agent. |
+
+### DeskTicketPriority
+
+`DeskTicketPriority` represents the priority level of a Desk ticket.
+
+#### List of values
+
+| Value | Description |
+|---|---|
+| LOW | Low priority. |
+| MEDIUM | Medium priority. |
+| HIGH | High priority. |
+| URGENT | Urgent priority. |
+
+### DeskTicketAgent
+
+`DeskTicketAgent` represents the agent assigned to a Desk ticket.
+
+#### List of properties
+
+| Property name | Type | Description |
+|---|---|---|
+| id | string | The unique ID of the agent. |
+| name | string | The display name of the agent. |
+| profileUrl | string \| null | The URL of the agent's profile image. |
+
+---
+
+## Limitations
+
+- This feature provides read-only access to ticket information. You can retrieve and refresh ticket data, but cannot create, update, or close tickets.
+- This feature does not fully replace the Desk SDK. Ticket creation, agent actions, and real-time ticket events still require the Desk SDK.
+- Desk ticket information is only available for conversations that have been handed off to Desk.

@@ -96,14 +96,6 @@ jobs:
 
             Layer 0 (`shared-conventions.md`) and Layer 2 (`platform-format/aadocs.md`) always apply to every file.
 
-            ## Domain Knowledge
-
-            The style guides are the single source of truth. The context below is domain knowledge needed to apply sdk-api § 5 "Cross-Platform Rules" correctly.
-
-            **SDK platform relationships:**
-            - React NPM, React Native, and JavaScript CDN share the `ai-agent-js` SDK codebase. Identical code between these is expected — it is the same SDK, not a cross-platform copy.
-            - Android (Kotlin/Java) and iOS (Swift) are separate SDKs from the JS-based platforms.
-
             ## Changed Files to Review
 
             ${{ steps.changed-files.outputs.files }}
@@ -195,6 +187,7 @@ jobs:
             - Can I point to the exact section and rule in the guides? If not, do not flag it.
             - Did I check existing files in the same directory for established patterns? (editor.md Step 2 requires this.) If the existing pattern differs from your interpretation of the rule, trust the existing pattern.
             - Am I suggesting adding content that doesn't currently exist? That violates edit restraint — only flag what is wrong, never what is missing-but-not-required.
+            - Am I interpreting a rule beyond what it literally says? For example, sdk-api § 5 prohibits the act of copying code between platforms — it does NOT prohibit code that happens to be identical across platforms. If each platform's code uses correct syntax for that platform and matches its source, it is valid regardless of similarity to other platforms.
 
             1. **Every issue must cite a specific rule** from the guides. Do not invent rules. Do not extend rules beyond what they explicitly say.
             2. **Provide concrete fixes** as `suggestion` blocks whenever possible.
