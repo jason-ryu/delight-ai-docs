@@ -32,7 +32,7 @@ To learn more about how to use Platform APIs for Delight AI agent, see [our guid
 
 ***
 
-## Retrieve webhook setting
+## Get webhook setting
 
 Retrieves the current webhook configuration. By default, this returns the application-level setting. To retrieve the setting for a specific AI agent, pass the `ai_agent_id` query parameter.
 
