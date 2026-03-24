@@ -14,9 +14,9 @@ A typical HTTP request to the Chat API includes the following headers for authen
 
 ### Headers
 
-* `app_id` and `ai_agent_id`: Can be found in Delight AI dashboard or its URL
-* Content-Type: Every request must include a `Content-Type` header.
-* Api-Token: Either the master API token or a secondary API token is required for the Sendbird server to [authenticate](https://sendbird.com/docs/chat/platform-api/v3/prepare-to-use-api) your API requests.
+- `app_id` and `ai_agent_id`: Can be found in Delight AI dashboard or its URL
+- Content-Type: Every request must include a `Content-Type` header.
+- Api-Token: Either the master API token or a secondary API token is required for the Sendbird server to [authenticate](https://sendbird.com/docs/chat/platform-api/v3/prepare-to-use-api) your API requests.
 
 ### Base URL
 
@@ -27,7 +27,7 @@ https://api-{app_id}.sendbird.com/v3
 ```
 
 {% hint style="info" %}
-To learn more about how to use Platform APIs for Delight AI agent, see [our guide](how-to-use-platform-api.md).
+To learn more about how to use Platform APIs for Delight AI agent, see [How to use Platform API](how-to-use-platform-api.md).
 {% endhint %}
 
 ***
