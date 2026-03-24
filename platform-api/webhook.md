@@ -96,7 +96,7 @@ PUT https://api-{application_id}.sendbird.com/v3/ai_agent/settings/webhook
 
 ### Request body
 
-<table><thead><tr><th width="230">Property</th><th width="130">Type</th><th>Description</th></tr></thead><tbody><tr><td>ai_agent_id</td><td>string</td><td>(Optional) Specifies the unique ID of the AI agent. If omitted, the application-level setting is updated.</td></tr><tr><td>enabled</td><td>boolean</td><td>(Required) Specifies whether to enable or disable the webhook.</td></tr><tr><td>url</td><td>string</td><td>(Required) Specifies the webhook endpoint URL. Must start with <code>http://</code> or <code>https://</code>.</td></tr><tr><td>category_subscriptions</td><td>array</td><td>(Required) Lists the event categories to subscribe to. Use <code>["*"]</code> to subscribe to all events, or specify individual categories. <code>"*"</code> cannot be combined with other categories.</td></tr></tbody></table>
+<table><thead><tr><th width="230">Property</th><th width="130">Type</th><th>Description</th></tr></thead><tbody><tr><td>ai_agent_id</td><td>string</td><td>(Optional) Specifies the unique ID of the AI agent. If omitted, the application-level setting is updated.</td></tr><tr><td>enabled</td><td>boolean</td><td>(Required) Determines whether to enable or disable the webhook.</td></tr><tr><td>url</td><td>string</td><td>(Required) Specifies the webhook endpoint URL. Must start with <code>http://</code> or <code>https://</code>.</td></tr><tr><td>category_subscriptions</td><td>array</td><td>(Required) Lists the event categories to subscribe to. Use <code>["*"]</code> to subscribe to all events, or specify individual categories. <code>"*"</code> cannot be combined with other categories.</td></tr></tbody></table>
 
 ### Response
 
