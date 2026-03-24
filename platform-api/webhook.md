@@ -1,6 +1,6 @@
 # Webhook
 
-The webhook setting API allows you to programmatically configure webhook endpoints for your AI agent. You can set the destination URL, choose which events to subscribe to, and manage settings per AI agent or at the application level.
+With Delight AI agent, you can programmatically configure webhook endpoints. Use this API to set the destination URL, choose which events to subscribe to, and manage settings per AI agent or at the application level.
 
 {% hint style="info" %}
 To learn more about webhook events and their payload formats, see the [Webhook guide](../dashboard-guide/webhook.md).
@@ -100,7 +100,7 @@ PUT https://api-{application_id}.sendbird.com/v3/ai_agent/settings/webhook
 
 ### Response
 
-If successful, this action returns the updated webhook setting in the same format as the [Retrieve webhook setting](webhook.md#retrieve-webhook-setting) response.
+If successful, this action returns the updated webhook setting in the same format as the [Get webhook setting](webhook.md#get-webhook-setting) response.
 
 ***
 
@@ -108,7 +108,7 @@ If successful, this action returns the updated webhook setting in the same forma
 
 The following event categories are available for subscription via `category_subscriptions`:
 
-<table><thead><tr><th width="320">Category</th><th>Description</th></tr></thead><tbody><tr><td><code>*</code></td><td>Subscribe to all events. Cannot be combined with individual categories.</td></tr><tr><td><code>conversation:started</code></td><td>A conversation started.</td></tr><tr><td><code>conversation:closed</code></td><td>A conversation has been closed.</td></tr><tr><td><code>conversation:redacted</code></td><td>PII redaction has been completed for a closed conversation.</td></tr><tr><td><code>conversation:analyzed</code></td><td>Analytics processing has been completed for a closed conversation.</td></tr><tr><td><code>handoff</code></td><td>Handoff to a human agent takes place.</td></tr><tr><td><code>message:user_sent</code></td><td>A user sends a message to AI agent.</td></tr><tr><td><code>message:ai_agent_sent</code></td><td>Your AI agent sends a message to the user.</td></tr><tr><td><code>message:human_agent_sent</code></td><td>A human agent sends a message to the user after handoff.</td></tr><tr><td><code>flagged_message:hallucination_detected</code></td><td>Your AI agent generated a response at a low confidence level.</td></tr></tbody></table>
+<table><thead><tr><th width="320">Category</th><th>Description</th></tr></thead><tbody><tr><td>*</td><td>Subscribe to all events. Cannot be combined with individual categories.</td></tr><tr><td>conversation:started</td><td>A conversation started.</td></tr><tr><td>conversation:closed</td><td>A conversation has been closed.</td></tr><tr><td>conversation:redacted</td><td>PII redaction has been completed for a closed conversation.</td></tr><tr><td>conversation:analyzed</td><td>Analytics processing has been completed for a closed conversation.</td></tr><tr><td>handoff</td><td>Handoff to a human agent takes place.</td></tr><tr><td>message:user_sent</td><td>A user sends a message to AI agent.</td></tr><tr><td>message:ai_agent_sent</td><td>Your AI agent sends a message to the user.</td></tr><tr><td>message:human_agent_sent</td><td>A human agent sends a message to the user after handoff.</td></tr><tr><td>flagged_message:hallucination_detected</td><td>Your AI agent generated a response at a low confidence level.</td></tr></tbody></table>
 
 ***
 
