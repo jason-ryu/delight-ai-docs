@@ -107,6 +107,7 @@
 * [How to use Platform API](platform-api/how-to-use-platform-api.md)
 * [Context object for messenger channel](platform-api/context-object-for-messenger-channel.md)
 * [Data export](platform-api/data-export.md)
+* [Webhook](platform-api/webhook.md)
 * [Proactive chat](platform-api/proactive-chat.md)
 * [Knowledge - Snippet](platform-api/knowledge-snippet.md)
 * [Multi-turn testing (WIP)](platform-api/multi-turn-testing-wip.md)
