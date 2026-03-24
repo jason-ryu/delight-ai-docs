@@ -46,7 +46,7 @@ GET https://api-{application_id}.sendbird.com/v3/ai_agent/settings/webhook
 
 #### Query parameters
 
-<table><thead><tr><th width="180">Optional</th><th width="130">Type</th><th>Description</th></tr></thead><tbody><tr><td>ai_agent_id</td><td>string</td><td>Specifies the unique ID of the AI agent. If omitted, the application-level webhook setting is returned.</td></tr></tbody></table>
+<table><thead><tr><th width="180">Parameter name</th><th width="130">Type</th><th>Description</th></tr></thead><tbody><tr><td>ai_agent_id</td><td>string</td><td>Specifies the unique ID of the AI agent. If omitted, the application-level webhook setting is returned.</td></tr></tbody></table>
 
 ### Response
 
